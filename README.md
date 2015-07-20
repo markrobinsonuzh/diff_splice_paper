@@ -9,9 +9,11 @@ One goal of the paper is to contrast different types of differential splicing de
 The structure of this repository is as follows:
 
 - drosophila
+	- reference_files/: Directory containing the mean-dispersion estimates used for the simulation
 	- run_analysis_drosophila5.sh: Bash script to invoke all analysis steps for the fruit fly simulation. 
 
 - hsapiens
+	- reference_files/: Directory containing the mean-dispersion estimates used for the simulation
 	- run_analysis_human5.sh: Bash script to invoke all analysis steps for the human simulation. 
 
 - software
