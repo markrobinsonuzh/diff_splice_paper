@@ -1,0 +1,55 @@
+method_name	method_col	organism	threshold	L1	FDR	TPR	fill_color
+DEXSeq-noaggreg	#009E73	Drosophila	0.01	(n = 13937, n.ds = 1000)	0.107246376811594	0.616	white
+DEXSeq-noaggreg	#009E73	Drosophila	0.05	(n = 13937, n.ds = 1000)	0.151162790697674	0.657	white
+DEXSeq-noaggreg	#009E73	Drosophila	0.1	(n = 13937, n.ds = 1000)	0.195294117647059	0.684	white
+DEXSeq-noaggreg (f1)	#56B4E9	Drosophila	0.01	(n = 13937, n.ds = 1000)	0.100436681222707	0.618	white
+DEXSeq-noaggreg (f1)	#56B4E9	Drosophila	0.05	(n = 13937, n.ds = 1000)	0.14453125	0.657	white
+DEXSeq-noaggreg (f1)	#56B4E9	Drosophila	0.1	(n = 13937, n.ds = 1000)	0.193624557260921	0.683	white
+DEXSeq-noaggreg (f2)	#0072B2	Drosophila	0.01	(n = 13937, n.ds = 1000)	0.0535714285714286	0.583	white
+DEXSeq-noaggreg (f2)	#0072B2	Drosophila	0.05	(n = 13937, n.ds = 1000)	0.086053412462908	0.616	white
+DEXSeq-noaggreg (f2)	#0072B2	Drosophila	0.1	(n = 13937, n.ds = 1000)	0.102272727272727	0.632	white
+DEXSeq-noaggreg (f3)	#D55E00	Drosophila	0.01	(n = 13937, n.ds = 1000)	0.0390492359932088	0.566	white
+DEXSeq-noaggreg (f3)	#D55E00	Drosophila	0.05	(n = 13937, n.ds = 1000)	0.0648148148148148	0.606	white
+DEXSeq-noaggreg (f3)	#D55E00	Drosophila	0.1	(n = 13937, n.ds = 1000)	0.0806451612903226	0.627	#D55E00
+DEXSeq-noaggreg (f4)	#CC79A7	Drosophila	0.01	(n = 13937, n.ds = 1000)	0.0725075528700906	0.614	white
+DEXSeq-noaggreg (f4)	#CC79A7	Drosophila	0.05	(n = 13937, n.ds = 1000)	0.116778523489933	0.658	white
+DEXSeq-noaggreg (f4)	#CC79A7	Drosophila	0.1	(n = 13937, n.ds = 1000)	0.167686658506732	0.68	white
+DEXSeq-noaggreg (f5)	#00FF00	Drosophila	0.01	(n = 13937, n.ds = 1000)	0.0721966205837174	0.604	white
+DEXSeq-noaggreg (f5)	#00FF00	Drosophila	0.05	(n = 13937, n.ds = 1000)	0.107142857142857	0.65	white
+DEXSeq-noaggreg (f5)	#00FF00	Drosophila	0.1	(n = 13937, n.ds = 1000)	0.156171284634761	0.67	white
+DEXSeq-noaggreg (f6)	#72B20C	Drosophila	0.01	(n = 13937, n.ds = 1000)	0.103953147877013	0.612	white
+DEXSeq-noaggreg (f6)	#72B20C	Drosophila	0.05	(n = 13937, n.ds = 1000)	0.151948051948052	0.653	white
+DEXSeq-noaggreg (f6)	#72B20C	Drosophila	0.1	(n = 13937, n.ds = 1000)	0.195035460992908	0.681	white
+DEXSeq-noaggreg (kallisto >25%)	#E69F00	Drosophila	0.01	(n = 13937, n.ds = 1000)	0.0308943089430894	0.596	white
+DEXSeq-noaggreg (kallisto >25%)	#E69F00	Drosophila	0.05	(n = 13937, n.ds = 1000)	0.0605612998522895	0.636	white
+DEXSeq-noaggreg (kallisto >25%)	#E69F00	Drosophila	0.1	(n = 13937, n.ds = 1000)	0.079608938547486	0.659	#E69F00
+DEXSeq-noaggreg (RSEM >25%)	#000000	Drosophila	0.01	(n = 13937, n.ds = 1000)	0.0212418300653595	0.599	white
+DEXSeq-noaggreg (RSEM >25%)	#000000	Drosophila	0.05	(n = 13937, n.ds = 1000)	0.040785498489426	0.635	#000000
+DEXSeq-noaggreg (RSEM >25%)	#000000	Drosophila	0.1	(n = 13937, n.ds = 1000)	0.0597439544807966	0.661	#000000
+DEXSeq-noaggreg	#009E73	Human	0.01	(n = 20410, n.ds = 1000)	0.216808769792935	0.643	white
+DEXSeq-noaggreg	#009E73	Human	0.05	(n = 20410, n.ds = 1000)	0.304655870445344	0.687	white
+DEXSeq-noaggreg	#009E73	Human	0.1	(n = 20410, n.ds = 1000)	0.37145390070922	0.709	white
+DEXSeq-noaggreg (f1)	#56B4E9	Human	0.01	(n = 20410, n.ds = 1000)	0.123626373626374	0.638	white
+DEXSeq-noaggreg (f1)	#56B4E9	Human	0.05	(n = 20410, n.ds = 1000)	0.192353643966547	0.676	white
+DEXSeq-noaggreg (f1)	#56B4E9	Human	0.1	(n = 20410, n.ds = 1000)	0.232558139534884	0.693	white
+DEXSeq-noaggreg (f2)	#0072B2	Human	0.01	(n = 20410, n.ds = 1000)	0.0856269113149847	0.598	white
+DEXSeq-noaggreg (f2)	#0072B2	Human	0.05	(n = 20410, n.ds = 1000)	0.156417112299465	0.631	white
+DEXSeq-noaggreg (f2)	#0072B2	Human	0.1	(n = 20410, n.ds = 1000)	0.187032418952618	0.652	white
+DEXSeq-noaggreg (f3)	#D55E00	Human	0.01	(n = 20410, n.ds = 1000)	0.0492091388400703	0.541	white
+DEXSeq-noaggreg (f3)	#D55E00	Human	0.05	(n = 20410, n.ds = 1000)	0.0960629921259843	0.574	white
+DEXSeq-noaggreg (f3)	#D55E00	Human	0.1	(n = 20410, n.ds = 1000)	0.125368731563422	0.593	white
+DEXSeq-noaggreg (f4)	#CC79A7	Human	0.01	(n = 20410, n.ds = 1000)	0.137228260869565	0.635	white
+DEXSeq-noaggreg (f4)	#CC79A7	Human	0.05	(n = 20410, n.ds = 1000)	0.219003476245655	0.674	white
+DEXSeq-noaggreg (f4)	#CC79A7	Human	0.1	(n = 20410, n.ds = 1000)	0.263771186440678	0.695	white
+DEXSeq-noaggreg (f5)	#00FF00	Human	0.01	(n = 20410, n.ds = 1000)	0.0593900481540931	0.586	white
+DEXSeq-noaggreg (f5)	#00FF00	Human	0.05	(n = 20410, n.ds = 1000)	0.116642958748222	0.621	white
+DEXSeq-noaggreg (f5)	#00FF00	Human	0.1	(n = 20410, n.ds = 1000)	0.150993377483444	0.641	white
+DEXSeq-noaggreg (f6)	#72B20C	Human	0.01	(n = 20410, n.ds = 1000)	0.211340206185567	0.612	white
+DEXSeq-noaggreg (f6)	#72B20C	Human	0.05	(n = 20410, n.ds = 1000)	0.316666666666667	0.656	white
+DEXSeq-noaggreg (f6)	#72B20C	Human	0.1	(n = 20410, n.ds = 1000)	0.386093321134492	0.671	white
+DEXSeq-noaggreg (kallisto >25%)	#E69F00	Human	0.01	(n = 20410, n.ds = 1000)	0.0666666666666667	0.658	white
+DEXSeq-noaggreg (kallisto >25%)	#E69F00	Human	0.05	(n = 20410, n.ds = 1000)	0.113087674714104	0.698	white
+DEXSeq-noaggreg (kallisto >25%)	#E69F00	Human	0.1	(n = 20410, n.ds = 1000)	0.148986889153754	0.714	white
+DEXSeq-noaggreg (RSEM >25%)	#000000	Human	0.01	(n = 20410, n.ds = 1000)	0.0516499282639885	0.661	white
+DEXSeq-noaggreg (RSEM >25%)	#000000	Human	0.05	(n = 20410, n.ds = 1000)	0.0943152454780362	0.701	white
+DEXSeq-noaggreg (RSEM >25%)	#000000	Human	0.1	(n = 20410, n.ds = 1000)	0.130592503022975	0.719	white

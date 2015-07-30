@@ -1,0 +1,487 @@
+method_name	method_col	method_pch	organism	threshold	L1	FDR	TPR	fill_color
+casper	casper	complete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.208791208791209	0.418604651162791	white
+casper	casper	complete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.113924050632911	0.406976744186047	white
+casper	casper	complete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.333333333333333	0.334448160535117	white
+casper	casper	complete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.469135802469136	#000000
+casper	casper	complete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.311111111111111	#000000
+casper	casper	complete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.335664335664336	#000000
+casper	casper	complete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.444444444444444	#000000
+casper	casper	complete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#000000
+casper	casper	complete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.3	#000000
+casper	casper	complete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.225490196078431	0.459302325581395	white
+casper	casper	complete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.254901960784314	0.441860465116279	white
+casper	casper	complete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.46039603960396	0.364548494983278	white
+casper	casper	complete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.506172839506173	#000000
+casper	casper	complete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.344444444444444	#000000
+casper	casper	complete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.356643356643357	#000000
+casper	casper	complete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.555555555555556	#000000
+casper	casper	complete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#000000
+casper	casper	complete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.3	#000000
+casper	casper	complete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.281818181818182	0.459302325581395	white
+casper	casper	complete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.363636363636364	0.447674418604651	white
+casper	casper	complete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.527777777777778	0.397993311036789	white
+casper	casper	complete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.530864197530864	#000000
+casper	casper	complete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.355555555555556	#000000
+casper	casper	complete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.363636363636364	#000000
+casper	casper	complete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#000000
+casper	casper	complete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#000000
+casper	casper	complete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.35	#000000
+casper, incomplete	casper	incomplete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.202127659574468	0.436046511627907	white
+casper, incomplete	casper	incomplete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.0930232558139535	0.453488372093023	white
+casper, incomplete	casper	incomplete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.296052631578947	0.357859531772575	white
+casper, incomplete	casper	incomplete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.407407407407407	#000000
+casper, incomplete	casper	incomplete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.333333333333333	#000000
+casper, incomplete	casper	incomplete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.328671328671329	#000000
+casper, incomplete	casper	incomplete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.555555555555556	#000000
+casper, incomplete	casper	incomplete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.285714285714286	#000000
+casper, incomplete	casper	incomplete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.3	#000000
+casper, incomplete	casper	incomplete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.216981132075472	0.482558139534884	white
+casper, incomplete	casper	incomplete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.240740740740741	0.476744186046512	white
+casper, incomplete	casper	incomplete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.400990099009901	0.404682274247492	white
+casper, incomplete	casper	incomplete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.481481481481481	#000000
+casper, incomplete	casper	incomplete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.344444444444444	#000000
+casper, incomplete	casper	incomplete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.335664335664336	#000000
+casper, incomplete	casper	incomplete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#000000
+casper, incomplete	casper	incomplete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#000000
+casper, incomplete	casper	incomplete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.3	#000000
+casper, incomplete	casper	incomplete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.269565217391304	0.488372093023256	white
+casper, incomplete	casper	incomplete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.328	0.488372093023256	white
+casper, incomplete	casper	incomplete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.453781512605042	0.434782608695652	white
+casper, incomplete	casper	incomplete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.493827160493827	#000000
+casper, incomplete	casper	incomplete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.377777777777778	#000000
+casper, incomplete	casper	incomplete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.34965034965035	#000000
+casper, incomplete	casper	incomplete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#000000
+casper, incomplete	casper	incomplete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#000000
+casper, incomplete	casper	incomplete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.3	#000000
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.162790697674419	0.627906976744186	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.159090909090909	0.645348837209302	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.409090909090909	0.521739130434783	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.617283950617284	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.544444444444444	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.531468531468531	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.45	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.236486486486486	0.656976744186046	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.289156626506024	0.686046511627907	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.517241379310345	0.561872909698997	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.62962962962963	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.577777777777778	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.58041958041958	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.642857142857143	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.5	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.291925465838509	0.662790697674419	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.361702127659574	0.697674418604651	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.587822014051522	0.588628762541806	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.654320987654321	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.6	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.601398601398601	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.642857142857143	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.55	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.161538461538462	0.633720930232558	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.156716417910448	0.656976744186046	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.374015748031496	0.531772575250836	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.604938271604938	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.544444444444444	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.517482517482518	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.45	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.245033112582781	0.662790697674419	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.274390243902439	0.691860465116279	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.48048048048048	0.578595317725752	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.62962962962963	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.555555555555556	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.573426573426573	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.5	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.31547619047619	0.668604651162791	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.367875647668394	0.709302325581395	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.542713567839196	0.608695652173913	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.62962962962963	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.577777777777778	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.587412587412587	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.55	#F0E442
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.173611111111111	0.691860465116279	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.186206896551724	0.686046511627907	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.409090909090909	0.608695652173913	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.691358024691358	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.622222222222222	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.608391608391608	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.55	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.242424242424242	0.726744186046512	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.29608938547486	0.732558139534884	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.514851485148515	0.655518394648829	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.716049382716049	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.655555555555556	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.664335664335664	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.642857142857143	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.307692307692308	0.732558139534884	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.376811594202899	0.75	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.580448065173116	0.688963210702341	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.753086419753086	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.677777777777778	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.678321678321678	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.642857142857143	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.65	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.179310344827586	0.691860465116279	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.169014084507042	0.686046511627907	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.373702422145329	0.605351170568562	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.666666666666667	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.611111111111111	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.573426573426573	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.55	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.251497005988024	0.726744186046512	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.292134831460674	0.732558139534884	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.484210526315789	0.655518394648829	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.703703703703704	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.633333333333333	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.629370629370629	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.32620320855615	0.732558139534884	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.379807692307692	0.75	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.541387024608501	0.68561872909699	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.703703703703704	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.666666666666667	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.643356643356643	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.65	#009E73
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.203007518796992	0.616279069767442	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.181102362204724	0.604651162790698	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.287610619469027	0.538461538461538	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.654320987654321	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.588888888888889	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.517482517482518	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.5	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.241379310344828	0.63953488372093	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.26530612244898	0.627906976744186	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.372693726937269	0.568561872909699	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.691358024691358	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.633333333333333	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.587412587412587	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.5	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.251655629139073	0.656976744186046	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.291139240506329	0.651162790697674	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.401360544217687	0.588628762541806	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.703703703703704	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.633333333333333	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.615384615384615	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.5	#56B4E9
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.184615384615385	0.616279069767442	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.155737704918033	0.598837209302326	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.262672811059908	0.535117056856187	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.604938271604938	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.566666666666667	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.496503496503497	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.555555555555556	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.232876712328767	0.651162790697674	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.237410071942446	0.616279069767442	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.348484848484849	0.575250836120401	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.641975308641975	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.588888888888889	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.566433566433566	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.555555555555556	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.264516129032258	0.662790697674419	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.270967741935484	0.656976744186046	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.399317406143345	0.588628762541806	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.654320987654321	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.6	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.58041958041958	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.555555555555556	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#56B4E9
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.173611111111111	0.691860465116279	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.173611111111111	0.691860465116279	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.411575562700965	0.612040133779264	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.691358024691358	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.622222222222222	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.622377622377622	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.55	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.24390243902439	0.720930232558139	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.290502793296089	0.738372093023256	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.517073170731707	0.662207357859532	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.716049382716049	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.655555555555556	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.671328671328671	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.642857142857143	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.305555555555556	0.726744186046512	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.376190476190476	0.761627906976744	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.577777777777778	0.698996655518395	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.753086419753086	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.677777777777778	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.685314685314685	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.642857142857143	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.65	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.19047619047619	0.691860465116279	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.161971830985915	0.691860465116279	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.376712328767123	0.608695652173913	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.666666666666667	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.611111111111111	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.573426573426573	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.55	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.261904761904762	0.720930232558139	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.275280898876405	0.75	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.488372093023256	0.662207357859532	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.703703703703704	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.633333333333333	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.636363636363636	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.335106382978723	0.726744186046512	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.365384615384615	0.767441860465116	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.543046357615894	0.692307692307692	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.703703703703704	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.666666666666667	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.65034965034965	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.65	#E69F00
+kallisto	kallisto	complete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.242236024844721	0.709302325581395	white
+kallisto	kallisto	complete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.351351351351351	0.697674418604651	white
+kallisto	kallisto	complete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.577777777777778	0.635451505016722	white
+kallisto	kallisto	complete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.679012345679012	#00FF00
+kallisto	kallisto	complete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.655555555555556	#00FF00
+kallisto	kallisto	complete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.636363636363636	#00FF00
+kallisto	kallisto	complete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.555555555555556	#00FF00
+kallisto	kallisto	complete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#00FF00
+kallisto	kallisto	complete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.55	#00FF00
+kallisto	kallisto	complete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.371980676328502	0.755813953488372	white
+kallisto	kallisto	complete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.504032258064516	0.715116279069767	white
+kallisto	kallisto	complete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.686274509803922	0.695652173913043	white
+kallisto	kallisto	complete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.740740740740741	#00FF00
+kallisto	kallisto	complete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.677777777777778	#00FF00
+kallisto	kallisto	complete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.671328671328671	#00FF00
+kallisto	kallisto	complete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.555555555555556	#00FF00
+kallisto	kallisto	complete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.642857142857143	#00FF00
+kallisto	kallisto	complete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#00FF00
+kallisto	kallisto	complete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.454166666666667	0.761627906976744	white
+kallisto	kallisto	complete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.583870967741935	0.75	white
+kallisto	kallisto	complete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.736842105263158	0.719063545150502	white
+kallisto	kallisto	complete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.753086419753086	#00FF00
+kallisto	kallisto	complete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.677777777777778	#00FF00
+kallisto	kallisto	complete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.713286713286713	#00FF00
+kallisto	kallisto	complete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.555555555555556	#00FF00
+kallisto	kallisto	complete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.785714285714286	#00FF00
+kallisto	kallisto	complete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.238993710691824	0.703488372093023	white
+kallisto, incomplete	kallisto	incomplete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.300578034682081	0.703488372093023	white
+kallisto, incomplete	kallisto	incomplete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.497354497354497	0.635451505016722	white
+kallisto, incomplete	kallisto	incomplete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.407407407407407	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.455555555555556	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.482517482517482	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.333333333333333	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.142857142857143	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.2	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.371980676328502	0.755813953488372	white
+kallisto, incomplete	kallisto	incomplete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.425233644859813	0.715116279069767	white
+kallisto, incomplete	kallisto	incomplete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.601941747572815	0.68561872909699	white
+kallisto, incomplete	kallisto	incomplete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.469135802469136	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.511111111111111	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.538461538461538	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.333333333333333	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.214285714285714	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.35	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.449579831932773	0.761627906976744	white
+kallisto, incomplete	kallisto	incomplete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.523985239852399	0.75	white
+kallisto, incomplete	kallisto	incomplete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.652960526315789	0.705685618729097	white
+kallisto, incomplete	kallisto	incomplete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.481481481481481	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.522222222222222	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.573426573426573	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.444444444444444	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.214285714285714	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.35	#00FF00
+MISO	MISO	complete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.21656050955414	0.715116279069767	white
+MISO	MISO	complete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.240506329113924	0.697674418604651	white
+MISO	MISO	complete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.461111111111111	0.648829431438127	white
+MISO	MISO	complete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.740740740740741	#0072B2
+MISO	MISO	complete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.666666666666667	#0072B2
+MISO	MISO	complete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.629370629370629	#0072B2
+MISO	MISO	complete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#0072B2
+MISO	MISO	complete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#0072B2
+MISO	MISO	complete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#0072B2
+MISO	MISO	complete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.318918918918919	0.732558139534884	white
+MISO	MISO	complete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.389671361502347	0.755813953488372	white
+MISO	MISO	complete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.571725571725572	0.688963210702341	white
+MISO	MISO	complete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.740740740740741	#0072B2
+MISO	MISO	complete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.688888888888889	#0072B2
+MISO	MISO	complete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.692307692307692	#0072B2
+MISO	MISO	complete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#0072B2
+MISO	MISO	complete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#0072B2
+MISO	MISO	complete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#0072B2
+MISO	MISO	complete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.383177570093458	0.767441860465116	white
+MISO	MISO	complete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.478764478764479	0.784883720930233	white
+MISO	MISO	complete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.646280991735537	0.71571906354515	white
+MISO	MISO	complete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.740740740740741	#0072B2
+MISO	MISO	complete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.688888888888889	#0072B2
+MISO	MISO	complete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.713286713286713	#0072B2
+MISO	MISO	complete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#0072B2
+MISO	MISO	complete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.714285714285714	#0072B2
+MISO	MISO	complete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.65	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.226415094339623	0.715116279069767	white
+MISO, incomplete	MISO	incomplete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.197368421052632	0.709302325581395	white
+MISO, incomplete	MISO	incomplete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.407294832826748	0.652173913043478	white
+MISO, incomplete	MISO	incomplete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.493827160493827	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.488888888888889	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.517482517482518	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.444444444444444	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.45	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.341968911917098	0.738372093023256	white
+MISO, incomplete	MISO	incomplete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.331632653061224	0.761627906976744	white
+MISO, incomplete	MISO	incomplete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.518604651162791	0.692307692307692	white
+MISO, incomplete	MISO	incomplete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.506172839506173	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.522222222222222	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.587412587412587	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.444444444444444	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.45	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.407079646017699	0.779069767441861	white
+MISO, incomplete	MISO	incomplete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.425531914893617	0.784883720930233	white
+MISO, incomplete	MISO	incomplete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.58766859344894	0.71571906354515	white
+MISO, incomplete	MISO	incomplete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.555555555555556	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.533333333333333	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.657342657342657	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.444444444444444	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.45	#0072B2
+SplicingGraph	SplicingGraph	complete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.180555555555556	0.686046511627907	white
+SplicingGraph	SplicingGraph	complete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.116279069767442	0.662790697674419	white
+SplicingGraph	SplicingGraph	complete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.337037037037037	0.59866220735786	white
+SplicingGraph	SplicingGraph	complete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.716049382716049	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.622222222222222	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.601398601398601	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.228395061728395	0.726744186046512	white
+SplicingGraph	SplicingGraph	complete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.222929936305732	0.709302325581395	white
+SplicingGraph	SplicingGraph	complete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.449275362318841	0.635451505016722	white
+SplicingGraph	SplicingGraph	complete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.728395061728395	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.644444444444444	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.657342657342657	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.258426966292135	0.767441860465116	white
+SplicingGraph	SplicingGraph	complete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.246987951807229	0.726744186046512	white
+SplicingGraph	SplicingGraph	complete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.508771929824561	0.655518394648829	white
+SplicingGraph	SplicingGraph	complete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.740740740740741	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.677777777777778	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.671328671328671	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#D55E00
+SplicingGraph	SplicingGraph	complete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.6	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.202702702702703	0.686046511627907	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.103174603174603	0.656976744186046	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.284552845528455	0.588628762541806	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.54320987654321	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.566666666666667	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.510489510489511	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.555555555555556	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.285714285714286	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.5	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.239263803680982	0.720930232558139	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.185430463576159	0.715116279069767	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.41358024691358	0.635451505016722	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.617283950617284	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.622222222222222	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.552447552447552	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.555555555555556	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.5	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.269230769230769	0.773255813953488	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.253012048192771	0.720930232558139	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.470430107526882	0.658862876254181	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.654320987654321	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.644444444444444	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.559440559440559	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.555555555555556	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.428571428571429	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.5	#D55E00
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.26241134751773	0.604651162790698	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.280575539568345	0.581395348837209	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.427184466019417	0.591973244147157	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.666666666666667	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.655555555555556	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.573426573426573	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.4	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.389189189189189	0.656976744186046	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.441176470588235	0.662790697674419	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.586497890295359	0.655518394648829	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.691358024691358	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.688888888888889	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.615384615384615	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.777777777777778	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.4	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.48695652173913	0.686046511627907	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.539033457249071	0.720930232558139	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.680817610062893	0.678929765886288	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.691358024691358	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.733333333333333	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.664335664335664	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.888888888888889	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.571428571428571	#CC79A7
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.45	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.17741935483871	0.593023255813954	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.179487179487179	0.558139534883721	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.311203319502075	0.555183946488294	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.617283950617284	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.533333333333333	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.538461538461538	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.285714285714286	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.3	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.327044025157233	0.622093023255814	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.360759493670886	0.587209302325581	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.474137931034483	0.612040133779264	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.641975308641975	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.622222222222222	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.587412587412587	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.3	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	0 ds. 0 nonds (n = 7299, n.ds = 172)	0.380681818181818	0.633720930232558	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	0 ds. 1 nonds (n = 5735, n.ds = 172)	0.450495049504951	0.645348837209302	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	0 ds.[ 2,17] nonds (n = 7019, n.ds = 299)	0.557339449541284	0.645484949832776	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	1 ds. 0 nonds (n = 81, n.ds = 81)	0	0.654320987654321	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	1 ds. 1 nonds (n = 90, n.ds = 90)	0	0.644444444444444	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	1 ds.[ 2,17] nonds (n = 143, n.ds = 143)	0	0.608391608391608	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	2 ds. 0 nonds (n = 9, n.ds = 9)	0	0.666666666666667	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	2 ds. 1 nonds (n = 14, n.ds = 14)	0	0.357142857142857	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	2 ds.[ 2,17] nonds (n = 20, n.ds = 20)	0	0.3	#CC79A7

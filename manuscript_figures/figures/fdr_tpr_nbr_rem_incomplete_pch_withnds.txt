@@ -1,0 +1,325 @@
+method_name	method_col	method_pch	organism	threshold	L1	FDR	TPR	fill_color
+casper	casper	complete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	0	0.5	#000000
+casper	casper	complete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.0625	0.397350993377483	white
+casper	casper	complete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.0428134556574924	0.375750300120048	white
+casper	casper	complete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	0.166666666666667	0.625	white
+casper	casper	complete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.072463768115942	0.423841059602649	white
+casper	casper	complete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.0890052356020942	0.417767106842737	white
+casper	casper	complete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	0.166666666666667	0.625	white
+casper	casper	complete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.170731707317073	0.450331125827815	white
+casper	casper	complete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.135714285714286	0.43577430972389	white
+casper, incomplete	casper	incomplete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	NA	0	#000000
+casper, incomplete	casper	incomplete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.113636363636364	0.258278145695364	white
+casper, incomplete	casper	incomplete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.0479041916167665	0.381752701080432	white
+casper, incomplete	casper	incomplete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	NA	0	#000000
+casper, incomplete	casper	incomplete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.148936170212766	0.264900662251656	white
+casper, incomplete	casper	incomplete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.0861618798955614	0.420168067226891	white
+casper, incomplete	casper	incomplete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	NA	0	#000000
+casper, incomplete	casper	incomplete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.254545454545455	0.271523178807947	white
+casper, incomplete	casper	incomplete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.127659574468085	0.442977190876351	white
+DEXSeq-default	DEXSeq-default	complete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	0.133333333333333	0.8125	white
+DEXSeq-default	DEXSeq-default	complete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.0520833333333333	0.602649006622517	white
+DEXSeq-default	DEXSeq-default	complete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.11090573012939	0.577430972388956	white
+DEXSeq-default	DEXSeq-default	complete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	0.133333333333333	0.8125	white
+DEXSeq-default	DEXSeq-default	complete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.1	0.655629139072848	white
+DEXSeq-default	DEXSeq-default	complete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.156765676567657	0.613445378151261	white
+DEXSeq-default	DEXSeq-default	complete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	0.133333333333333	0.8125	white
+DEXSeq-default	DEXSeq-default	complete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.15	0.675496688741722	white
+DEXSeq-default	DEXSeq-default	complete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.193353474320242	0.641056422569028	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	NA	0	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.0909090909090909	0.264900662251656	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.104364326375712	0.566626650660264	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	NA	0	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.16	0.278145695364238	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.159128978224456	0.602641056422569	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	NA	0	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.224137931034483	0.298013245033113	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.189147286821705	0.627851140456183	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	0.125	0.875	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.0495049504950495	0.635761589403974	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.116928446771379	0.607442977190876	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	0.125	0.875	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.0964912280701754	0.682119205298013	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.161490683229814	0.648259303721489	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	0.117647058823529	0.9375	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.152	0.701986754966887	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.204802259887006	0.675870348139256	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	NA	0	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.0487804878048781	0.258278145695364	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.0764818355640535	0.579831932773109	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	NA	0	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.0851063829787234	0.28476821192053	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.125	0.605042016806723	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	NA	0	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.150943396226415	0.298013245033113	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.154220779220779	0.625450180072029	white
+featureCounts-exon	featureCounts-exon	complete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	0.411764705882353	0.625	white
+featureCounts-exon	featureCounts-exon	complete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.2	0.423841059602649	white
+featureCounts-exon	featureCounts-exon	complete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.0829383886255924	0.464585834333734	white
+featureCounts-exon	featureCounts-exon	complete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	0.411764705882353	0.625	white
+featureCounts-exon	featureCounts-exon	complete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.261363636363636	0.43046357615894	white
+featureCounts-exon	featureCounts-exon	complete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.12847965738758	0.48859543817527	white
+featureCounts-exon	featureCounts-exon	complete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	0.411764705882353	0.625	white
+featureCounts-exon	featureCounts-exon	complete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.306122448979592	0.450331125827815	white
+featureCounts-exon	featureCounts-exon	complete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.142284569138277	0.513805522208884	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	NA	0	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.267857142857143	0.271523178807947	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.0813397129186603	0.460984393757503	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	NA	0	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.328125	0.28476821192053	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.118790496760259	0.489795918367347	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	NA	0	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.391891891891892	0.298013245033113	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.138775510204082	0.506602641056423	white
+featureCounts-flat	featureCounts-flat	complete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	0.125	0.875	white
+featureCounts-flat	featureCounts-flat	complete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.03125	0.615894039735099	white
+featureCounts-flat	featureCounts-flat	complete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.0803738317757009	0.590636254501801	white
+featureCounts-flat	featureCounts-flat	complete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	0.125	0.875	white
+featureCounts-flat	featureCounts-flat	complete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.0476190476190476	0.662251655629139	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.132107023411371	0.623049219687875	white
+featureCounts-flat	featureCounts-flat	complete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	0.125	0.875	white
+featureCounts-flat	featureCounts-flat	complete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.0973451327433628	0.675496688741722	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.15541601255887	0.645858343337335	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	NA	0	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.0714285714285714	0.258278145695364	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.0766283524904215	0.578631452581032	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	NA	0	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.104166666666667	0.28476821192053	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.121527777777778	0.607442977190876	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	NA	0	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.163636363636364	0.304635761589404	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.152350081037277	0.627851140456183	white
+kallisto	kallisto	complete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	0.0666666666666667	0.875	white
+kallisto	kallisto	complete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.110091743119266	0.642384105960265	white
+kallisto	kallisto	complete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.101476014760148	0.584633853541417	white
+kallisto	kallisto	complete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	0.0666666666666667	0.875	white
+kallisto	kallisto	complete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.151260504201681	0.66887417218543	white
+kallisto	kallisto	complete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.144262295081967	0.626650660264106	white
+kallisto	kallisto	complete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	0.0666666666666667	0.875	#00FF00
+kallisto	kallisto	complete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.174603174603175	0.688741721854305	white
+kallisto	kallisto	complete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.190546528803545	0.657863145258103	white
+kallisto, incomplete	kallisto	incomplete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.0896414342629482	0.548619447779112	white
+kallisto, incomplete	kallisto	incomplete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.144082332761578	0.599039615846339	white
+kallisto, incomplete	kallisto	incomplete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.1728	0.620648259303721	white
+MISO	MISO	complete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	0	0.875	#0072B2
+MISO	MISO	complete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.0560747663551402	0.66887417218543	white
+MISO	MISO	complete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.112244897959184	0.626650660264106	white
+MISO	MISO	complete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	0	0.875	#0072B2
+MISO	MISO	complete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.12396694214876	0.701986754966887	white
+MISO	MISO	complete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.171554252199413	0.678271308523409	white
+MISO	MISO	complete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	0.0666666666666667	0.875	#0072B2
+MISO	MISO	complete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.170542635658915	0.708609271523179	white
+MISO	MISO	complete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.214666666666667	0.707082833133253	white
+MISO, incomplete	MISO	incomplete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.100900900900901	0.599039615846339	white
+MISO, incomplete	MISO	incomplete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.15527950310559	0.653061224489796	white
+MISO, incomplete	MISO	incomplete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.189655172413793	0.677070828331333	white
+SplicingGraph	SplicingGraph	complete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	0	0.75	#D55E00
+SplicingGraph	SplicingGraph	complete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.0326086956521739	0.589403973509934	white
+SplicingGraph	SplicingGraph	complete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.083955223880597	0.589435774309724	white
+SplicingGraph	SplicingGraph	complete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	0	0.8125	#D55E00
+SplicingGraph	SplicingGraph	complete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.0588235294117647	0.635761589403974	white
+SplicingGraph	SplicingGraph	complete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.135761589403974	0.626650660264106	white
+SplicingGraph	SplicingGraph	complete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	0.0714285714285714	0.8125	#D55E00
+SplicingGraph	SplicingGraph	complete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.0925925925925926	0.649006622516556	#D55E00
+SplicingGraph	SplicingGraph	complete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.178187403993856	0.642256902761104	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.0593047034764826	0.552220888355342	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.0968921389396709	0.593037214885954	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.124137931034483	0.60984393757503	white
+TopHat-junctions	TopHat-junctions	complete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	0.0769230769230769	0.75	white
+TopHat-junctions	TopHat-junctions	complete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.105263157894737	0.450331125827815	white
+TopHat-junctions	TopHat-junctions	complete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.0787589498806683	0.463385354141657	white
+TopHat-junctions	TopHat-junctions	complete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	0.2	0.75	white
+TopHat-junctions	TopHat-junctions	complete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.152941176470588	0.47682119205298	white
+TopHat-junctions	TopHat-junctions	complete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.129032258064516	0.518607442977191	white
+TopHat-junctions	TopHat-junctions	complete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	0.25	0.75	white
+TopHat-junctions	TopHat-junctions	complete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.208791208791209	0.47682119205298	white
+TopHat-junctions	TopHat-junctions	complete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.16304347826087	0.554621848739496	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Drosophila	0.01	 0 (n = 1799, n.ds = 16)	NA	0	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Drosophila	0.01	 1 (n = 7873, n.ds = 151)	0.106382978723404	0.278145695364238	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Drosophila	0.01	[ 2,54] (n = 4265, n.ds = 833)	0.0776699029126214	0.456182472989196	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Drosophila	0.05	 0 (n = 1799, n.ds = 16)	NA	0	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Drosophila	0.05	 1 (n = 7873, n.ds = 151)	0.160714285714286	0.311258278145695	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Drosophila	0.05	[ 2,54] (n = 4265, n.ds = 833)	0.123711340206186	0.510204081632653	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Drosophila	0.1	 0 (n = 1799, n.ds = 16)	NA	0	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Drosophila	0.1	 1 (n = 7873, n.ds = 151)	0.213114754098361	0.317880794701987	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Drosophila	0.1	[ 2,54] (n = 4265, n.ds = 833)	0.153846153846154	0.541416566626651	white
+casper	casper	complete	Human	0.01	 0 (n = 858, n.ds = 2)	0	0.5	#000000
+casper	casper	complete	Human	0.01	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#000000
+casper	casper	complete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.17607223476298	0.370182555780933	white
+casper	casper	complete	Human	0.05	 0 (n = 858, n.ds = 2)	0	0.5	#000000
+casper	casper	complete	Human	0.05	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#000000
+casper	casper	complete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.263450834879406	0.4026369168357	white
+casper	casper	complete	Human	0.1	 0 (n = 858, n.ds = 2)	0.5	0.5	white
+casper	casper	complete	Human	0.1	 1 (n = 3596, n.ds = 12)	0.166666666666667	0.416666666666667	white
+casper	casper	complete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.332258064516129	0.419878296146045	white
+casper, incomplete	casper	incomplete	Human	0.01	 0 (n = 858, n.ds = 2)	NA	0	#000000
+casper, incomplete	casper	incomplete	Human	0.01	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#000000
+casper, incomplete	casper	incomplete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.15929203539823	0.385395537525355	white
+casper, incomplete	casper	incomplete	Human	0.05	 0 (n = 858, n.ds = 2)	NA	0	#000000
+casper, incomplete	casper	incomplete	Human	0.05	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#000000
+casper, incomplete	casper	incomplete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.237659963436929	0.422920892494929	white
+casper, incomplete	casper	incomplete	Human	0.1	 0 (n = 858, n.ds = 2)	NA	0	#000000
+casper, incomplete	casper	incomplete	Human	0.1	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#000000
+casper, incomplete	casper	incomplete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.292682926829268	0.441176470588235	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	 0 (n = 858, n.ds = 2)	0	1	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	 1 (n = 3596, n.ds = 12)	0.166666666666667	0.416666666666667	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.208391608391608	0.574036511156187	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	 0 (n = 858, n.ds = 2)	0	1	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	 1 (n = 3596, n.ds = 12)	0.142857142857143	0.5	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.302890173410405	0.611561866125761	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	 0 (n = 858, n.ds = 2)	0	1	#F0E442
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	 1 (n = 3596, n.ds = 12)	0.142857142857143	0.5	white
+DEXSeq-default	DEXSeq-default	complete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.369807497467072	0.630831643002028	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	 0 (n = 858, n.ds = 2)	NA	0	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.194050991501416	0.577079107505071	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	 0 (n = 858, n.ds = 2)	NA	0	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.285377358490566	0.614604462474645	white
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	 0 (n = 858, n.ds = 2)	NA	0	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#F0E442
+DEXSeq-default, incomplete	DEXSeq-default	incomplete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.352697095435685	0.632860040567951	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	 0 (n = 858, n.ds = 2)	0	1	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	 1 (n = 3596, n.ds = 12)	0.142857142857143	0.5	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.217980295566502	0.644016227180527	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	 0 (n = 858, n.ds = 2)	0	1	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	 1 (n = 3596, n.ds = 12)	0.125	0.583333333333333	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.306748466257669	0.68762677484787	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	 0 (n = 858, n.ds = 2)	0	1	#009E73
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	 1 (n = 3596, n.ds = 12)	0.125	0.583333333333333	white
+DEXSeq-noaggreg	DEXSeq-noaggreg	complete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.373881932021467	0.709939148073022	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	 0 (n = 858, n.ds = 2)	NA	0	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.201273885350318	0.635902636916836	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	 0 (n = 858, n.ds = 2)	NA	0	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.293248945147679	0.679513184584179	white
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	 0 (n = 858, n.ds = 2)	NA	0	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#009E73
+DEXSeq-noaggreg, incomplete	DEXSeq-noaggreg	incomplete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.356676003734827	0.698782961460446	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	 0 (n = 858, n.ds = 2)	0.666666666666667	0.5	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	 1 (n = 3596, n.ds = 12)	0.571428571428571	0.5	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.155555555555556	0.578093306288032	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	 0 (n = 858, n.ds = 2)	0.75	0.5	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	 1 (n = 3596, n.ds = 12)	0.625	0.5	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.211488250652742	0.612576064908722	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	 0 (n = 858, n.ds = 2)	0.8	0.5	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	 1 (n = 3596, n.ds = 12)	0.647058823529412	0.5	white
+featureCounts-exon	featureCounts-exon	complete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.23114956736712	0.630831643002028	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	 0 (n = 858, n.ds = 2)	NA	0	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	 1 (n = 3596, n.ds = 12)	0.583333333333333	0.416666666666667	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.143076923076923	0.564908722109533	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	 0 (n = 858, n.ds = 2)	NA	0	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	 1 (n = 3596, n.ds = 12)	0.642857142857143	0.416666666666667	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.201884253028264	0.601419878296146	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	 0 (n = 858, n.ds = 2)	NA	0	#56B4E9
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	 1 (n = 3596, n.ds = 12)	0.666666666666667	0.416666666666667	white
+featureCounts-exon, incomplete	featureCounts-exon	incomplete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.2375	0.618661257606491	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	 0 (n = 858, n.ds = 2)	0	1	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	 1 (n = 3596, n.ds = 12)	0.125	0.583333333333333	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.216911764705882	0.648073022312373	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	 0 (n = 858, n.ds = 2)	0	1	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	 1 (n = 3596, n.ds = 12)	0.125	0.583333333333333	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.307926829268293	0.690669371196755	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	 0 (n = 858, n.ds = 2)	0	1	#E69F00
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	 1 (n = 3596, n.ds = 12)	0.125	0.583333333333333	white
+featureCounts-flat	featureCounts-flat	complete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.372775800711744	0.71501014198783	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	 0 (n = 858, n.ds = 2)	NA	0	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.20379746835443	0.637931034482759	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	 0 (n = 858, n.ds = 2)	NA	0	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.294670846394984	0.684584178498986	white
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	 0 (n = 858, n.ds = 2)	NA	0	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	 1 (n = 3596, n.ds = 12)	0	0.416666666666667	#E69F00
+featureCounts-flat, incomplete	featureCounts-flat	incomplete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.356811862835959	0.703853955375254	white
+kallisto	kallisto	complete	Human	0.01	 0 (n = 858, n.ds = 2)	0.333333333333333	1	white
+kallisto	kallisto	complete	Human	0.01	 1 (n = 3596, n.ds = 12)	0	0.5	#00FF00
+kallisto	kallisto	complete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.357283464566929	0.662271805273834	white
+kallisto	kallisto	complete	Human	0.05	 0 (n = 858, n.ds = 2)	0.333333333333333	1	white
+kallisto	kallisto	complete	Human	0.05	 1 (n = 3596, n.ds = 12)	0.142857142857143	0.5	white
+kallisto	kallisto	complete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.484826054774241	0.705882352941177	white
+kallisto	kallisto	complete	Human	0.1	 0 (n = 858, n.ds = 2)	0.333333333333333	1	white
+kallisto	kallisto	complete	Human	0.1	 1 (n = 3596, n.ds = 12)	0.142857142857143	0.5	white
+kallisto	kallisto	complete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.55313859540087	0.72920892494929	white
+kallisto, incomplete	kallisto	incomplete	Human	0.01	 0 (n = 858, n.ds = 2)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.01	 1 (n = 3596, n.ds = 12)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.322505800464037	0.592292089249493	white
+kallisto, incomplete	kallisto	incomplete	Human	0.05	 0 (n = 858, n.ds = 2)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.05	 1 (n = 3596, n.ds = 12)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.430630630630631	0.640973630831643	white
+kallisto, incomplete	kallisto	incomplete	Human	0.1	 0 (n = 858, n.ds = 2)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.1	 1 (n = 3596, n.ds = 12)	NA	0	#00FF00
+kallisto, incomplete	kallisto	incomplete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.497305619707467	0.662271805273834	white
+MISO	MISO	complete	Human	0.01	 0 (n = 858, n.ds = 2)	0.333333333333333	1	white
+MISO	MISO	complete	Human	0.01	 1 (n = 3596, n.ds = 12)	0.125	0.583333333333333	white
+MISO	MISO	complete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.261931187569367	0.674442190669371	white
+MISO	MISO	complete	Human	0.05	 0 (n = 858, n.ds = 2)	0.333333333333333	1	white
+MISO	MISO	complete	Human	0.05	 1 (n = 3596, n.ds = 12)	0.125	0.583333333333333	white
+MISO	MISO	complete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.371863799283154	0.710953346855984	white
+MISO	MISO	complete	Human	0.1	 0 (n = 858, n.ds = 2)	0.333333333333333	1	white
+MISO	MISO	complete	Human	0.1	 1 (n = 3596, n.ds = 12)	0.3	0.583333333333333	white
+MISO	MISO	complete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.449583017437453	0.73630831643002	white
+MISO, incomplete	MISO	incomplete	Human	0.01	 0 (n = 858, n.ds = 2)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.01	 1 (n = 3596, n.ds = 12)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.245098039215686	0.62474645030426	white
+MISO, incomplete	MISO	incomplete	Human	0.05	 0 (n = 858, n.ds = 2)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.05	 1 (n = 3596, n.ds = 12)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.350842418235877	0.664300202839757	white
+MISO, incomplete	MISO	incomplete	Human	0.1	 0 (n = 858, n.ds = 2)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.1	 1 (n = 3596, n.ds = 12)	NA	0	#0072B2
+MISO, incomplete	MISO	incomplete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.419055649241147	0.698782961460446	white
+SplicingGraph	SplicingGraph	complete	Human	0.01	 0 (n = 858, n.ds = 2)	0.5	0.5	white
+SplicingGraph	SplicingGraph	complete	Human	0.01	 1 (n = 3596, n.ds = 12)	0.25	0.5	white
+SplicingGraph	SplicingGraph	complete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.1699604743083	0.63894523326572	white
+SplicingGraph	SplicingGraph	complete	Human	0.05	 0 (n = 858, n.ds = 2)	0.5	0.5	white
+SplicingGraph	SplicingGraph	complete	Human	0.05	 1 (n = 3596, n.ds = 12)	0.3	0.583333333333333	white
+SplicingGraph	SplicingGraph	complete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.250561797752809	0.676470588235294	white
+SplicingGraph	SplicingGraph	complete	Human	0.1	 0 (n = 858, n.ds = 2)	0.5	0.5	white
+SplicingGraph	SplicingGraph	complete	Human	0.1	 1 (n = 3596, n.ds = 12)	0.3	0.583333333333333	white
+SplicingGraph	SplicingGraph	complete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.293333333333333	0.698782961460446	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	 0 (n = 858, n.ds = 2)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	 1 (n = 3596, n.ds = 12)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.15983026874116	0.602434077079107	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	 0 (n = 858, n.ds = 2)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	 1 (n = 3596, n.ds = 12)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.238151658767773	0.652129817444219	white
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	 0 (n = 858, n.ds = 2)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	 1 (n = 3596, n.ds = 12)	NA	0	#D55E00
+SplicingGraph, incomplete	SplicingGraph	incomplete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.285407725321888	0.675456389452333	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	 0 (n = 858, n.ds = 2)	0.5	1	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	 1 (n = 3596, n.ds = 12)	0.545454545454545	0.416666666666667	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.252844500632111	0.599391480730223	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	 0 (n = 858, n.ds = 2)	0.6	1	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	 1 (n = 3596, n.ds = 12)	0.666666666666667	0.5	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.397567820392891	0.653144016227181	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	 0 (n = 858, n.ds = 2)	0.6	1	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	 1 (n = 3596, n.ds = 12)	0.714285714285714	0.5	white
+TopHat-junctions	TopHat-junctions	complete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.49740932642487	0.688640973630832	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	 0 (n = 858, n.ds = 2)	NA	0	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	 1 (n = 3596, n.ds = 12)	0.5	0.333333333333333	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.01	[ 2,69] (n = 15956, n.ds = 986)	0.171428571428571	0.558823529411765	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	 0 (n = 858, n.ds = 2)	NA	0	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	 1 (n = 3596, n.ds = 12)	0.636363636363636	0.333333333333333	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.05	[ 2,69] (n = 15956, n.ds = 986)	0.309385863267671	0.60446247464503	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	 0 (n = 858, n.ds = 2)	NA	0	#CC79A7
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	 1 (n = 3596, n.ds = 12)	0.714285714285714	0.333333333333333	white
+TopHat-junctions, incomplete	TopHat-junctions	incomplete	Human	0.1	[ 2,69] (n = 15956, n.ds = 986)	0.385221674876847	0.632860040567951	white
