@@ -56,6 +56,7 @@ x$status_ds <- ifelse(x$status_ds == 0, "non-differentially spliced",
                       "differentially spliced")
 pdf(output_pdf)
 print(ggplot(x, aes(x = gr1_geneCount, y = gr2_geneCount, col = status_ds)) + 
+        geom_abline(intercept = 0, slope = 1) + 
         geom_point(alpha = 1/2) + scale_x_log10() + scale_y_log10() + 
         scale_color_manual(values = c("red", "black"), name = "") +
         guides(colour = guide_legend(override.aes = list(size = 5))) + 
@@ -77,6 +78,7 @@ print(ggplot(x, aes(x = gr1_geneCount, y = gr2_geneCount, col = status_ds)) +
         ggtitle(""))
 
 print(ggplot(x, aes(x = gr1_geneTPM, y = gr2_geneTPM, col = status_ds)) + 
+        geom_abline(intercept = 0, slope = 1) + 
         geom_point(alpha = 1/2) + scale_x_log10() + scale_y_log10() + 
         scale_color_manual(values = c("red", "black"), name = "") +
         guides(colour = guide_legend(override.aes = list(size = 5))) + 
@@ -99,6 +101,7 @@ print(ggplot(x, aes(x = gr1_geneTPM, y = gr2_geneTPM, col = status_ds)) +
 
 print(ggplot(details, aes(x = gr1_isoformTPM, y = gr2_isoformTPM, 
                           col = transcript_ds_cat)) + 
+        geom_abline(intercept = 0, slope = 1) + 
         geom_point(alpha = 1/2) + scale_x_log10() + scale_y_log10() + 
         scale_color_manual(values = c("red", "black"), name = "") +
         guides(colour = guide_legend(override.aes = list(size = 5))) + 

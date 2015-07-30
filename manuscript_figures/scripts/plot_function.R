@@ -196,7 +196,7 @@ plot_fdr_tpr_paper <- function(path_to_results_drosophila,
       FDR_human <- calc_FDR(methods = methods_human, method_names = method_names, 
                             method_cols = method_cols, organism = "Human", 
                             thresholds = thresholds, truth = truth_human,
-                            path_to_resuts = path_to_results_human,
+                            path_to_results = path_to_results_human,
                             only_shared = only_shared)
       TPR_human <- calc_TPR(methods = methods_human, method_names = method_names, 
                             method_cols = method_cols, organism = "Human", 

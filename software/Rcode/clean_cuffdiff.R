@@ -27,9 +27,14 @@ gene_id <- sapply(res$gene, function(g) {
   paste(g2, collapse = "+")
 })
 
-res$gene_ensembl=gene_id
+res$gene_ensembl <- gene_id
 df <- res[, c("gene_ensembl", "q_value")]
-colnames(df) <- c("gene", paste0(method_name, ":adjP"))
 
-write.table(df, file = output_file, sep = "\t", row.names = FALSE,
+## For the few genes where there are many representations (which happens if there are isoforms that don't overlap any other isoform), keep the smallest FDR.
+library(dplyr)
+df2 <- as.data.frame(df %>% group_by(gene_ensembl) %>% summarise(q_value = min(q_value)) %>% ungroup())
+
+colnames(df2) <- c("gene", paste0(method_name, ":adjP"))
+
+write.table(df2, file = output_file, sep = "\t", row.names = FALSE,
             col.names = TRUE, quote = FALSE)

@@ -62,7 +62,7 @@ $ASTALAVISTA/astalavista -t asta \
 gunzip $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding_sorted.gtf_astalavista.gtf.gz
 
 ## Duplicate the protein_coding gtf file into one with the same name as the genome
-## fasta file, to make things easier for index building
+## fasta file, for index building (not really necessary)
 scp $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.gtf \
 $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel.gtf
 
@@ -90,6 +90,21 @@ $CUFFLINKS/cuffcompare -s $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.top
 -CG -r $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel.gtf \
 -o $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel_cuffdiff \
 $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel.gtf
+
+## Prepare gtf file for cuffdiff, where Ensembl gene IDs are used instead of symbols
+R CMD BATCH --no-restore --no-save "--args input_gtf='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel.gtf' output_gtf='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel_ensembl.gtf'" $RCODEGEN/generate_gtf_cuffdiff.R $ROUT/generate_gtf_cuffdiff_drosophila.Rout
+$CUFFLINKS/cuffcompare -s $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel.fa \
+-CG -r $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel_ensembl.gtf \
+-o $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel_ensembl_cuffdiff \
+$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel_ensembl.gtf
+
+## Prepare gtf file for cuffdiff, where all exons are renamed to CDS, and all CDS removed,
+## and Ensembl gene IDs are used instead of symbols
+R CMD BATCH --no-restore --no-save "--args input_gtf='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel.gtf' output_gtf='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel_ensembl_exontocds.gtf'" $RCODEGEN/generate_gtf_exontocds.R $ROUT/generate_gtf_exontocds_drosophila.Rout
+$CUFFLINKS/cuffcompare -s $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel.fa \
+-CG -r $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel_ensembl_exontocds.gtf \
+-o $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel_ensembl_exontocds_cuffdiff \
+$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel_ensembl_exontocds.gtf
 
 ## Prepare flattened annotations (for DEXSeq)
 python $DEXSEQ/dexseq_prepare_annotation.py \
@@ -122,6 +137,9 @@ $REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.gff3
 
 ## -------------------- COMPARE ANNOTATIONS TO HUMAN ----------------------- ##
 R CMD BATCH --no-restore --no-save "--args paths_to_gtf_files=list(drosophila='/home/Shared/data/alt_splicing_simulations/Simulation5_Charlotte/drosophila/reference_files/Drosophila_melanogaster.BDGP5.70.protein_coding.gtf',human='/home/Shared/data/alt_splicing_simulations/Simulation5_Charlotte/hsapiens/reference_files/Homo_sapiens.GRCh37.71.primary_assembly.protein_coding.gtf') paths_to_flattened_gff_files=list(drosophila='/home/Shared/data/alt_splicing_simulations/Simulation5_Charlotte/drosophila/reference_files/Drosophila_melanogaster.BDGP5.70.protein_coding.flattened.gff',human='/home/Shared/data/alt_splicing_simulations/Simulation5_Charlotte/hsapiens/reference_files/Homo_sapiens.GRCh37.71.primary_assembly.protein_coding.flattened.gff') output_file='$BASEDIR/drosophila_hsapiens_gtf.pdf'" $RCODEGEN/characterize_gtf_files.R $ROUT/characterize_gtf_files.Rout
+
+## ----------- Compare the bins generated with different methods ----------- ##
+R CMD BATCH --no-restore --no-save "--args path_to_gene_model_gtf_file='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.gtf' paths_to_gff_files=c(DEXSeqnoaggreg='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.flattened.nomerge.gff',DEXSeqdefault='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.flattened.gff',featureCountsflat='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.flatman.ign.gff') paths_to_gtf_files=c(featureCountsexon='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.exongene.gtf') all_gene_to_display=c('FBgn0039184+FBgn0039183','FBgn0263755+FBgn0263740','FBgn0010225+FBgn0085334+FBgn0037222','FBgn0004087+FBgn0038437','FBgn0004108+FBgn0036660') output_filename='$FIGDIR/compare_bins_drosophila.pdf' plot_height=10 ext_before=0.05 ext_after=0.05" $RCODEGEN/compare_bins.R $ROUT/compare_bins_drosophila.Rout
 
 ## -------------------------- DATA SIMULATION ------------------------------ ##
 
@@ -186,6 +204,22 @@ $NONNULLSIMULATION_NODE/1_reads/tophat/sample1/accepted_hits.bam,$NONNULLSIMULAT
 $NONNULLSIMULATION_NODE/1_reads/tophat/sample4/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample5/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample6/accepted_hits.bam
 
 R CMD BATCH --no-restore --no-save "--args path_to_cuffdiff_result='$NONNULLSIMULATION_NODE/2_counts/cuffdiff/cds.diff' path_to_gtf_file='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel.gtf' output_file='$NONNULLSIMULATION_NODE/4_results/cuffdiff.txt' method_name='cuffdiff'" $RCODEGEN/clean_cuffdiff.R $ROUT/clean_cuffdiff_drosophila.Rout
+
+## ---------------------- cuffdiff with Ensembl IDs ------------------------ ##
+$CUFFLINKS/cuffdiff -o $NONNULLSIMULATION_NODE/2_counts/cuffdiff_ensembl -p 6 \
+$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel_ensembl_cuffdiff.combined.gtf \
+$NONNULLSIMULATION_NODE/1_reads/tophat/sample1/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample2/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample3/accepted_hits.bam \
+$NONNULLSIMULATION_NODE/1_reads/tophat/sample4/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample5/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample6/accepted_hits.bam
+
+R CMD BATCH --no-restore --no-save "--args path_to_cuffdiff_result='$NONNULLSIMULATION_NODE/2_counts/cuffdiff_ensembl/cds.diff' output_file='$NONNULLSIMULATION_NODE/4_results/cuffdiff_ensembl.txt' method_name='cuffdiff_ensembl'" $RCODEGEN/clean_cuffdiff_ensembl.R $ROUT/clean_cuffdiff_ensembl_drosophila.Rout
+
+## ---------------------- cuffdiff with exons as cds ----------------------- ##
+$CUFFLINKS/cuffdiff -o $NONNULLSIMULATION_NODE/2_counts/cuffdiff_exontocds -p 6 \
+$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.dna.toplevel_ensembl_exontocds_cuffdiff.combined.gtf \
+$NONNULLSIMULATION_NODE/1_reads/tophat/sample1/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample2/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample3/accepted_hits.bam \
+$NONNULLSIMULATION_NODE/1_reads/tophat/sample4/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample5/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample6/accepted_hits.bam
+
+R CMD BATCH --no-restore --no-save "--args path_to_cuffdiff_result='$NONNULLSIMULATION_NODE/2_counts/cuffdiff_exontocds/cds.diff' output_file='$NONNULLSIMULATION_NODE/4_results/cuffdiff_exontocds.txt' method_name='cuffdiff_exontocds'" $RCODEGEN/clean_cuffdiff_ensembl.R $ROUT/clean_cuffdiff_ensembl_drosophila_exontocds.Rout
 
 ## ------------------------------- rMATS ----------------------------------- ##
 ## Must use samtools 0.1.19

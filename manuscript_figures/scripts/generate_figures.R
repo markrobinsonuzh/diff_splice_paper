@@ -29,7 +29,8 @@ path_to_truth_human <- paste0(basedir, "/hsapiens/no_diffexpression/",
 methods <- c("dexseq_htseq", "dexseq_htseq_nomerge", 
              "dexseq_featurecounts_flat",  "dexseq_featurecounts_noflat", 
              "dexseq_casper", "dexseq_miso_assignable", "dexseq_splicinggraph",
-             "dexseq_tophat_junc", "dexseq_kallisto", "cuffdiff", "rMATS_junction")
+             "dexseq_tophat_junc", "dexseq_kallisto", "cuffdiff_ensembl", 
+             "rMATS_junction")
 method_names <- c("DEXSeq-default", "DEXSeq-noaggreg", "featureCounts-flat", 
                   "featureCounts-exon", "casper", "MISO", "SplicingGraph", 
                   "TopHat-junctions", "kallisto", "cuffdiff", "rMATS")
@@ -44,6 +45,12 @@ method_cols <- c(rgb(240, 228, 66, maxColorValue = 255),
                  rgb(0, 255, 0, maxColorValue = 255),
                  rgb(114, 178, 12, maxColorValue = 255),
                  rgb(123, 0, 119, maxColorValue = 255))
+
+## Define colors and names for cuffdiff comparison
+methods_cuffdiff <- c("cuffdiff_ensembl", "cuffdiff_exontocds")
+method_names_cuffdiff <- c("cuffdiff", "cuffdiff-exon")
+method_cols_cuffdiff <- c(rgb(114, 178, 12, maxColorValue = 255),
+                          rgb(86, 180, 233, maxColorValue = 255))
 
 ## Define colors and names for different types of filtering
 ## 5%
@@ -266,6 +273,12 @@ truth_human <- read.delim(path_to_truth_human, header = TRUE, as.is = TRUE)
 ## OVERALL PERFORMANCE
 truth_drosophila$all <- paste0("(n = ", length(which(!is.na(truth_drosophila$ds_status))), ")")
 truth_human$all <- paste0("(n = ", length(which(!is.na(truth_human$ds_status))), ")")
+truth_drosophila$all_2 <- paste0("(n = ", length(which(!is.na(truth_drosophila$ds_status))), ", n.ds = ",
+                                 length(intersect(which(!is.na(truth_drosophila$ds_status)), 
+                                                  which(truth_drosophila$ds_status == 1))), ")")
+truth_human$all_2 <- paste0("(n = ", length(which(!is.na(truth_human$ds_status))),", n.ds = ",
+                            length(intersect(which(!is.na(truth_human$ds_status)), 
+                                             which(truth_human$ds_status == 1))), ")")
 
 ## Original data
 plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
@@ -279,6 +292,42 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    pointsize = 3, stripsize = 10,
                    axistitlesize = 15, axistextsize = 10, fig_height = 5) 
 
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods = methods, method_names = method_names, 
+                   method_cols = method_cols, thresholds = thresholds, 
+                   split_variable = "all_2",
+                   output_filename = paste0(output_directory, "/fdr_tpr_overall_withnds.pdf"),
+                   pointsize = 3, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 10, fig_height = 5) 
+
+## Original data, cuffdiff
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods = methods_cuffdiff, 
+                   method_names = method_names_cuffdiff, 
+                   method_cols = method_cols_cuffdiff, thresholds = thresholds, 
+                   split_variable = "all",
+                   output_filename = paste0(output_directory, "/fdr_tpr_overall_cuffdiff.pdf"),
+                   pointsize = 3, stripsize = 10, legend_nrow = 1, 
+                   axistitlesize = 15, axistextsize = 10, fig_height = 5) 
+
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods = methods_cuffdiff, 
+                   method_names = method_names_cuffdiff, 
+                   method_cols = method_cols_cuffdiff, thresholds = thresholds, 
+                   split_variable = "all_2",
+                   output_filename = paste0(output_directory, "/fdr_tpr_overall_cuffdiff_withnds.pdf"),
+                   pointsize = 3, stripsize = 10, legend_nrow = 1, 
+                   axistitlesize = 15, axistextsize = 10, fig_height = 5) 
+
 ## (consider only genes for which we have both truth and result, e.g. no complexes)
 plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
                    path_to_results_human = path_to_results_human,
@@ -286,9 +335,23 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    truth_human = truth_human, 
                    methods = methods, method_names = method_names, 
                    method_cols = method_cols, thresholds = thresholds, 
-                   split_variable = "all",
+                   split_variable = NULL,
                    output_filename = paste0(output_directory, "/fdr_tpr_overall_onlyshared.pdf"),
                    pointsize = 3, stripsize = 10, fig_height = 5, 
+                   axistitlesize = 15, axistextsize = 10, only_shared = TRUE) 
+
+## Same for cuffdiff
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods = methods_cuffdiff, 
+                   method_names = method_names_cuffdiff, 
+                   method_cols = method_cols_cuffdiff, thresholds = thresholds, 
+                   split_variable = "all",
+                   output_filename = paste0(output_directory, "/fdr_tpr_overall_onlyshared_cuffdiff.pdf"),
+                   pointsize = 3, stripsize = 10, fig_height = 5, 
+                   legend_nrow = 1, 
                    axistitlesize = 15, axistextsize = 10, only_shared = TRUE) 
 
 plot_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
@@ -299,6 +362,17 @@ plot_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                method_cols = method_cols, thresholds = thresholds, 
                split_variable = "all",
                output_filename = paste0(output_directory, "/tpr_overall.pdf"),
+               pointsize = 3, stripsize = 10,
+               axistitlesize = 15, axistextsize = 10) 
+
+plot_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+               path_to_results_human = path_to_results_human,
+               truth_drosophila = truth_drosophila, 
+               truth_human = truth_human,  
+               methods = methods, method_names = method_names, 
+               method_cols = method_cols, thresholds = thresholds, 
+               split_variable = "all_2",
+               output_filename = paste0(output_directory, "/tpr_overall_withnds.pdf"),
                pointsize = 3, stripsize = 10,
                axistitlesize = 15, axistextsize = 10) 
 
@@ -323,6 +397,38 @@ plot_perftable(path_to_results = path_to_results_human,
                split_variable = "all", only_shared = TRUE, 
                output_filename = paste0(output_directory, "/perf_overall_human_onlyshared.pdf"))
 
+plot_perftable(path_to_results = path_to_results_human, 
+               truth = truth_human, 
+               methods = methods_cuffdiff, 
+               method_names = method_names_cuffdiff, 
+               method_cols = method_cols_cuffdiff, threshold = 0.05, 
+               split_variable = "all", only_shared = TRUE, 
+               output_filename = paste0(output_directory, "/perf_overall_human_onlyshared_cuffdiff.pdf"))
+
+plot_perftable(path_to_results = path_to_results_human, 
+               truth = truth_human, 
+               methods = methods_cuffdiff, 
+               method_names = method_names_cuffdiff, 
+               method_cols = method_cols_cuffdiff, threshold = 0.05, 
+               split_variable = "all", only_shared = FALSE, 
+               output_filename = paste0(output_directory, "/perf_overall_human_cuffdiff.pdf"))
+
+plot_perftable(path_to_results = path_to_results_drosophila, 
+               truth = truth_drosophila, 
+               methods = methods_cuffdiff, 
+               method_names = method_names_cuffdiff, 
+               method_cols = method_cols_cuffdiff, threshold = 0.05, 
+               split_variable = "all", only_shared = TRUE, 
+               output_filename = paste0(output_directory, "/perf_overall_drosophila_onlyshared_cuffdiff.pdf"))
+
+plot_perftable(path_to_results = path_to_results_drosophila, 
+               truth = truth_drosophila, 
+               methods = methods_cuffdiff, 
+               method_names = method_names_cuffdiff, 
+               method_cols = method_cols_cuffdiff, threshold = 0.05, 
+               split_variable = "all", only_shared = FALSE, 
+               output_filename = paste0(output_directory, "/perf_overall_drosophila_cuffdiff.pdf"))
+
 ## Filtering
 plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
                    path_to_results_human = path_to_results_human,
@@ -339,6 +445,21 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    axistitlesize = 15, axistextsize = 10,
                    legend_nrow = 2, fig_height = 5) 
 
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods = methods_filtering, 
+                   method_names = method_names_filtering, 
+                   method_cols = method_cols_filtering, 
+                   thresholds = thresholds, 
+                   split_variable = "all_2",
+                   output_filename = paste0(output_directory, 
+                                            "/fdr_tpr_overall_filtering_withnds.pdf"),
+                   pointsize = 3, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 10,
+                   legend_nrow = 2, fig_height = 5) 
+
 ## (consider only genes for which we have both truth and result, so only the genes that actually have a q-value)
 plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
                    path_to_results_human = path_to_results_human,
@@ -348,7 +469,7 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    method_names = method_names_filtering, 
                    method_cols = method_cols_filtering, 
                    thresholds = thresholds, 
-                   split_variable = "all",
+                   split_variable = NULL,
                    output_filename = paste0(output_directory, 
                                             "/fdr_tpr_overall_filtering_onlyshared.pdf"),
                    pointsize = 3, stripsize = 10,
@@ -364,6 +485,18 @@ plot_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                method_cols = method_cols_filtering, thresholds = thresholds, 
                split_variable = "all",
                output_filename = paste0(output_directory, "/tpr_overall_filtering.pdf"),
+               pointsize = 3, stripsize = 10,
+               axistitlesize = 15, axistextsize = 10) 
+
+plot_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+               path_to_results_human = path_to_results_human,
+               truth_drosophila = truth_drosophila, 
+               truth_human = truth_human,  
+               methods = methods_filtering, 
+               method_names = method_names_filtering, 
+               method_cols = method_cols_filtering, thresholds = thresholds, 
+               split_variable = "all_2",
+               output_filename = paste0(output_directory, "/tpr_overall_filtering_withnds.pdf"),
                pointsize = 3, stripsize = 10,
                axistitlesize = 15, axistextsize = 10) 
 
@@ -406,6 +539,22 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    path_to_results_human = path_to_results_human,
                    truth_drosophila = truth_drosophila, 
                    truth_human = truth_human, 
+                   methods_human = methods_5_human,
+                   methods_drosophila = methods_5_drosophila,
+                   method_names = method_names_5, 
+                   method_cols = method_cols_5, 
+                   thresholds = thresholds, 
+                   split_variable = "all_2",
+                   output_filename = paste0(output_directory, 
+                                            "/fdr_tpr_overall_filtering_types_5_withnds.pdf"),
+                   pointsize = 3, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 10,
+                   legend_nrow = 3, fig_height = 5) 
+
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
                    methods_human = methods_10_human,
                    methods_drosophila = methods_10_drosophila,
                    method_names = method_names_10, 
@@ -414,6 +563,22 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    split_variable = "all",
                    output_filename = paste0(output_directory, 
                                             "/fdr_tpr_overall_filtering_types_10.pdf"),
+                   pointsize = 3, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 10,
+                   legend_nrow = 3, fig_height = 5) 
+
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods_human = methods_10_human,
+                   methods_drosophila = methods_10_drosophila,
+                   method_names = method_names_10, 
+                   method_cols = method_cols_10, 
+                   thresholds = thresholds, 
+                   split_variable = "all_2",
+                   output_filename = paste0(output_directory, 
+                                            "/fdr_tpr_overall_filtering_types_10_withnds.pdf"),
                    pointsize = 3, stripsize = 10,
                    axistitlesize = 15, axistextsize = 10,
                    legend_nrow = 3, fig_height = 5) 
@@ -438,6 +603,22 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    path_to_results_human = path_to_results_human,
                    truth_drosophila = truth_drosophila, 
                    truth_human = truth_human, 
+                   methods_human = methods_15_human,
+                   methods_drosophila = methods_15_drosophila,
+                   method_names = method_names_15, 
+                   method_cols = method_cols_15, 
+                   thresholds = thresholds, 
+                   split_variable = "all_2",
+                   output_filename = paste0(output_directory, 
+                                            "/fdr_tpr_overall_filtering_types_15_withnds.pdf"),
+                   pointsize = 3, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 10,
+                   legend_nrow = 3, fig_height = 5) 
+
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
                    methods_human = methods_25_human,
                    methods_drosophila = methods_25_drosophila,
                    method_names = method_names_25, 
@@ -450,6 +631,21 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    axistitlesize = 15, axistextsize = 10,
                    legend_nrow = 3, fig_height = 5) 
 
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods_human = methods_25_human,
+                   methods_drosophila = methods_25_drosophila,
+                   method_names = method_names_25, 
+                   method_cols = method_cols_25, 
+                   thresholds = thresholds, 
+                   split_variable = "all_2",
+                   output_filename = paste0(output_directory, 
+                                            "/fdr_tpr_overall_filtering_types_25_withnds.pdf"),
+                   pointsize = 3, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 10,
+                   legend_nrow = 3, fig_height = 5) 
 
 ## Incomplete annotation
 plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
@@ -470,6 +666,61 @@ plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                        axistitlesize = 15, axistextsize = 10,
                        legend_nrow = 2, fig_height = 8) 
 
+plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
+                       path_to_results_human = path_to_results_human,
+                       truth_drosophila = truth_drosophila, 
+                       truth_human = truth_human, 
+                       methods = methods_missing20, 
+                       method_names = method_names_missing20, 
+                       method_cols = method_cols_missing20, 
+                       method_pch = method_pch_missing20, 
+                       method_pchnames = method_pchnames_missing20,
+                       method_colnames = method_colnames_missing20,
+                       thresholds = thresholds, 
+                       split_variable = "all_2",
+                       output_filename = paste0(output_directory, 
+                                                "/fdr_tpr_overall_incomplete_pch_withnds.pdf"),
+                       pointsize = 3, stripsize = 10,
+                       axistitlesize = 15, axistextsize = 10,
+                       legend_nrow = 2, fig_height = 7) 
+
+plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
+                       path_to_results_human = path_to_results_human,
+                       truth_drosophila = truth_drosophila, 
+                       truth_human = truth_human, 
+                       methods = methods_missing20, 
+                       method_names = method_names_missing20, 
+                       method_cols = method_cols_missing20, 
+                       method_pch = method_pch_missing20, 
+                       method_pchnames = method_pchnames_missing20,
+                       method_colnames = method_colnames_missing20,
+                       thresholds = thresholds, 
+                       split_variable = "all_2",
+                       output_filename = paste0(output_directory, 
+                                                "/fdr_tpr_overall_incomplete_pch_withnds_ps1.pdf"),
+                       pointsize = 1, stripsize = 10,
+                       axistitlesize = 15, axistextsize = 10,
+                       legend_nrow = 2, fig_height = 7) 
+
+plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
+                       path_to_results_human = path_to_results_human,
+                       truth_drosophila = truth_drosophila, 
+                       truth_human = truth_human, 
+                       methods = methods_missing20, 
+                       method_names = method_names_missing20, 
+                       method_cols = method_cols_missing20, 
+                       method_pch = method_pch_missing20, 
+                       method_pchnames = method_pchnames_missing20,
+                       method_colnames = method_colnames_missing20,
+                       thresholds = thresholds, 
+                       split_variable = "all_2",
+                       output_filename = paste0(output_directory, 
+                                                "/fdr_tpr_overall_incomplete_pch_withnds_ps2.pdf"),
+                       pointsize = 2, stripsize = 10,
+                       axistitlesize = 15, axistextsize = 10,
+                       legend_nrow = 2, fig_height = 7) 
+
+
 plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
                    path_to_results_human = path_to_results_human,
                    truth_drosophila = truth_drosophila, 
@@ -484,6 +735,24 @@ plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                    split_variable = "all",
                    output_filename = paste0(output_directory, 
                                             "/tpr_overall_incomplete_pch.pdf"),
+                   pointsize = 3, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 10,
+                   legend_nrow = 2) 
+
+plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods = methods_missing20, 
+                   method_names = method_names_missing20, 
+                   method_cols = method_cols_missing20, 
+                   method_pch = method_pch2_missing20, 
+                   method_pchnames = method_pchnames_missing20,
+                   method_colnames = method_colnames_missing20,
+                   thresholds = thresholds, 
+                   split_variable = "all_2",
+                   output_filename = paste0(output_directory, 
+                                            "/tpr_overall_incomplete_pch_withnds.pdf"),
                    pointsize = 3, stripsize = 10,
                    axistitlesize = 15, axistextsize = 10,
                    legend_nrow = 2) 
@@ -514,6 +783,17 @@ truth_drosophila$nbr_missing_2 <- sapply(truth_drosophila$nbr_missing_ds_tr, fun
 truth_human$nbr_missing_2 <- sapply(truth_human$nbr_missing_ds_tr, function(i) {
   paste0(i, " (n = ", length(which(truth_human$nbr_missing_ds_tr == i)), ")")
 })
+
+truth_drosophila$nbr_missing_2_2 <- sapply(truth_drosophila$nbr_missing_ds_tr, function(i) {
+  paste0(i, " (n = ", length(which(truth_drosophila$nbr_missing_ds_tr == i)), ", n.ds = ",
+         length(intersect(which(truth_drosophila$nbr_missing_ds_tr == i), 
+                          which(truth_drosophila$ds_status == 1))), ")")
+})
+truth_human$nbr_missing_2_2 <- sapply(truth_human$nbr_missing_ds_tr, function(i) {
+  paste0(i, " (n = ", length(which(truth_human$nbr_missing_ds_tr == i)), ", n.ds = ",
+         length(intersect(which(truth_human$nbr_missing_ds_tr == i), 
+                          which(truth_human$ds_status == 1))), ")")
+})
 truth_drosophila$nbr_missing_ds_tr2 <- paste(truth_drosophila$nbr_missing_ds_tr, "du tx missing")
 truth_human$nbr_missing_ds_tr2 <- paste(truth_human$nbr_missing_ds_tr, "du tx missing")
 
@@ -531,6 +811,24 @@ plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                    split_variable = "nbr_missing_2",
                    output_filename = paste0(output_directory, 
                                             "/tpr_nbr_missing_ds_incomplete_pch.pdf"),
+                   pointsize = 1.5, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 7,
+                   legend_nrow = 2, fig_height = 7) 
+
+plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods = methods_missing20, 
+                   method_names = method_names_missing20, 
+                   method_cols = method_cols_missing20, 
+                   method_pch = method_pch2_missing20, 
+                   method_pchnames = method_pchnames_missing20,
+                   method_colnames = method_colnames_missing20,
+                   thresholds = thresholds, 
+                   split_variable = "nbr_missing_2_2",
+                   output_filename = paste0(output_directory, 
+                                            "/tpr_nbr_missing_ds_incomplete_pch_withnds.pdf"),
                    pointsize = 1.5, stripsize = 10,
                    axistitlesize = 15, axistextsize = 7,
                    legend_nrow = 2, fig_height = 7) 
@@ -570,6 +868,17 @@ truth_drosophila$nbr_missing_4 <- sapply(truth_drosophila$nbr_missing_combined, 
 truth_human$nbr_missing_4 <- sapply(truth_human$nbr_missing_combined, function(i) {
   paste0(i, " (n = ", length(which(truth_human$nbr_missing_combined == i)), ")")
 })
+truth_drosophila$nbr_missing_4_2 <- sapply(truth_drosophila$nbr_missing_combined, function(i) {
+  paste0(i, " (n = ", length(which(truth_drosophila$nbr_missing_combined == i)), ", n.ds = ",
+         length(intersect(which(truth_drosophila$nbr_missing_combined == i), 
+                          which(truth_drosophila$ds_status == 1))), ")")
+})
+truth_human$nbr_missing_4_2 <- sapply(truth_human$nbr_missing_combined, function(i) {
+  paste0(i, " (n = ", length(which(truth_human$nbr_missing_combined == i)), ", n.ds = ",
+         length(intersect(which(truth_human$nbr_missing_combined == i), 
+                          which(truth_human$ds_status == 1))), ")")
+})
+
 plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
                        path_to_results_human = NULL,
                        truth_drosophila = truth_drosophila, 
@@ -589,6 +898,25 @@ plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                        axistitlesize = 10, axistextsize = 10,
                        legend_nrow = 2) 
 
+plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
+                       path_to_results_human = NULL,
+                       truth_drosophila = truth_drosophila, 
+                       truth_human = NULL, 
+                       methods = methods_missing20, 
+                       method_names = method_names_missing20, 
+                       method_cols = method_cols_missing20, 
+                       method_pch = method_pch_missing20, 
+                       method_pchnames = method_pchnames_missing20,
+                       method_colnames = method_colnames_missing20,
+                       thresholds = thresholds, 
+                       split_variable = "nbr_missing_4_2",
+                       output_filename = paste0(output_directory, 
+                                                "/fdr_tpr_nbr_missing_ds_nonds", 
+                                                "_incomplete_pch_drosophila_withnds.pdf"),
+                       pointsize = 2, stripsize = 9,
+                       axistitlesize = 10, axistextsize = 10,
+                       legend_nrow = 2) 
+
 plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
                    path_to_results_human = NULL,
                    truth_drosophila = truth_drosophila, 
@@ -605,6 +933,25 @@ plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                                             "/tpr_nbr_missing_ds_nonds", 
                                             "_incomplete_pch_drosophila.pdf"),
                    pointsize = 1.5, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 7,
+                   legend_nrow = 2) 
+
+plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = NULL,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = NULL, 
+                   methods = methods_missing20, 
+                   method_names = method_names_missing20, 
+                   method_cols = method_cols_missing20, 
+                   method_pch = method_pch2_missing20, 
+                   method_pchnames = method_pchnames_missing20,
+                   method_colnames = method_colnames_missing20,
+                   thresholds = thresholds, 
+                   split_variable = "nbr_missing_4_2",
+                   output_filename = paste0(output_directory, 
+                                            "/tpr_nbr_missing_ds_nonds", 
+                                            "_incomplete_pch_drosophila_withnds.pdf"),
+                   pointsize = 1.5, stripsize = 9,
                    axistitlesize = 15, axistextsize = 7,
                    legend_nrow = 2) 
 
@@ -637,6 +984,25 @@ plot_fdr_tpr_paper_pch(path_to_results_drosophila = NULL,
                        axistitlesize = 10, axistextsize = 10,
                        legend_nrow = 2) 
 
+plot_fdr_tpr_paper_pch(path_to_results_drosophila = NULL, 
+                       path_to_results_human = path_to_results_human,
+                       truth_drosophila = NULL, 
+                       truth_human = truth_human, 
+                       methods = methods_missing20, 
+                       method_names = method_names_missing20, 
+                       method_cols = method_cols_missing20, 
+                       method_pch = method_pch_missing20, 
+                       method_pchnames = method_pchnames_missing20,
+                       method_colnames = method_colnames_missing20,
+                       thresholds = thresholds, 
+                       split_variable = "nbr_missing_4_2",
+                       output_filename = paste0(output_directory, 
+                                                "/fdr_tpr_nbr_missing_ds_nonds", 
+                                                "_incomplete_pch_human_withnds.pdf"),
+                       pointsize = 2, stripsize = 9,
+                       axistitlesize = 10, axistextsize = 10,
+                       legend_nrow = 2) 
+
 plot_tpr_paper_pch(path_to_results_drosophila = NULL, 
                    path_to_results_human = path_to_results_human,
                    truth_drosophila = NULL, 
@@ -653,6 +1019,25 @@ plot_tpr_paper_pch(path_to_results_drosophila = NULL,
                                             "/tpr_nbr_missing_ds_nonds", 
                                             "_incomplete_pch_human.pdf"),
                    pointsize = 1.5, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 7,
+                   legend_nrow = 2) 
+
+plot_tpr_paper_pch(path_to_results_drosophila = NULL, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = NULL, 
+                   truth_human = truth_human, 
+                   methods = methods_missing20, 
+                   method_names = method_names_missing20, 
+                   method_cols = method_cols_missing20, 
+                   method_pch = method_pch2_missing20, 
+                   method_pchnames = method_pchnames_missing20,
+                   method_colnames = method_colnames_missing20,
+                   thresholds = thresholds, 
+                   split_variable = "nbr_missing_4_2",
+                   output_filename = paste0(output_directory, 
+                                            "/tpr_nbr_missing_ds_nonds", 
+                                            "_incomplete_pch_human_withnds.pdf"),
+                   pointsize = 1.5, stripsize = 9,
                    axistitlesize = 15, axistextsize = 7,
                    legend_nrow = 2) 
 
@@ -677,6 +1062,17 @@ truth_drosophila$nbr_remaining_3 <- sapply(truth_drosophila$nbr_remaining_2, fun
 truth_human$nbr_remaining_3 <- sapply(truth_human$nbr_remaining_2, function(i) {
   paste0(i, " (n = ", length(which(truth_human$nbr_remaining_2 == i)), ")")
 })
+truth_drosophila$nbr_remaining_3_2 <- sapply(truth_drosophila$nbr_remaining_2, function(i) {
+  paste0(i, " (n = ", length(which(truth_drosophila$nbr_remaining_2 == i)), ", n.ds = ",
+         length(intersect(which(truth_drosophila$nbr_remaining_2 == i), 
+                          which(truth_drosophila$ds_status == 1))), ")")
+})
+truth_human$nbr_remaining_3_2 <- sapply(truth_human$nbr_remaining_2, function(i) {
+  paste0(i, " (n = ", length(which(truth_human$nbr_remaining_2 == i)), ", n.ds = ",
+         length(intersect(which(truth_human$nbr_remaining_2 == i), 
+                          which(truth_human$ds_status == 1))), ")")
+})
+
 plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
                        path_to_results_human = path_to_results_human,
                        truth_drosophila = truth_drosophila, 
@@ -696,6 +1092,25 @@ plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                        axistitlesize = 15, axistextsize = 10,
                        legend_nrow = 2) 
 
+plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
+                       path_to_results_human = path_to_results_human,
+                       truth_drosophila = truth_drosophila, 
+                       truth_human = truth_human, 
+                       methods = methods_missing20, 
+                       method_names = method_names_missing20, 
+                       method_cols = method_cols_missing20, 
+                       method_pch = method_pch_missing20, 
+                       method_pchnames = method_pchnames_missing20,
+                       method_colnames = method_colnames_missing20,
+                       thresholds = thresholds, 
+                       split_variable = "nbr_remaining_3_2",
+                       output_filename = paste0(output_directory, 
+                                                "/fdr_tpr_nbr_rem", 
+                                                "_incomplete_pch_withnds.pdf"),
+                       pointsize = 2, stripsize = 10,
+                       axistitlesize = 15, axistextsize = 10,
+                       legend_nrow = 2) 
+
 plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
                    path_to_results_human = path_to_results_human,
                    truth_drosophila = truth_drosophila, 
@@ -711,6 +1126,25 @@ plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                    output_filename = paste0(output_directory, 
                                             "/tpr_nbr_rem", 
                                             "_incomplete_pch.pdf"),
+                   pointsize = 2, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 7,
+                   legend_nrow = 2) 
+
+plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods = methods_missing20, 
+                   method_names = method_names_missing20, 
+                   method_cols = method_cols_missing20, 
+                   method_pch = method_pch2_missing20, 
+                   method_pchnames = method_pchnames_missing20,
+                   method_colnames = method_colnames_missing20,
+                   thresholds = thresholds, 
+                   split_variable = "nbr_remaining_3_2",
+                   output_filename = paste0(output_directory, 
+                                            "/tpr_nbr_rem", 
+                                            "_incomplete_pch_withnds.pdf"),
                    pointsize = 2, stripsize = 10,
                    axistitlesize = 15, axistextsize = 7,
                    legend_nrow = 2) 
@@ -748,6 +1182,17 @@ truth_drosophila$nbr_missing_5 <- sapply(truth_drosophila$nbr_missing_combined_2
 truth_human$nbr_missing_5 <- sapply(truth_human$nbr_missing_combined_2, function(i) {
   paste0(i, " (n = ", length(which(truth_human$nbr_missing_combined_2 == i)), ")")
 })
+truth_drosophila$nbr_missing_5_2 <- sapply(truth_drosophila$nbr_missing_combined_2, function(i) {
+  paste0(i, " (n = ", length(which(truth_drosophila$nbr_missing_combined_2 == i)), ", n.ds = ",
+         length(intersect(which(truth_drosophila$nbr_missing_combined_2 == i), 
+                          which(truth_drosophila$ds_status == 1))), ")")
+})
+truth_human$nbr_missing_5_2 <- sapply(truth_human$nbr_missing_combined_2, function(i) {
+  paste0(i, " (n = ", length(which(truth_human$nbr_missing_combined_2 == i)), ", n.ds = ",
+         length(intersect(which(truth_human$nbr_missing_combined_2 == i), 
+                          which(truth_human$ds_status == 1))), ")")
+})
+
 plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
                        path_to_results_human = NULL,
                        truth_drosophila = subset(truth_drosophila, 
@@ -769,6 +1214,27 @@ plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                        axistitlesize = 15, axistextsize = 10,
                        legend_nrow = 2) 
 
+plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
+                       path_to_results_human = NULL,
+                       truth_drosophila = subset(truth_drosophila, 
+                                                 !(nbr_missing_combined_2 %in% 
+                                                     c("0 ds. 0 rem", "0 ds. 1 rem"))), 
+                       truth_human = NULL, 
+                       methods = methods_missing20, 
+                       method_names = method_names_missing20, 
+                       method_cols = method_cols_missing20, 
+                       method_pch = method_pch_missing20, 
+                       method_pchnames = method_pchnames_missing20,
+                       method_colnames = method_colnames_missing20,
+                       thresholds = thresholds, 
+                       split_variable = "nbr_missing_5_2",
+                       output_filename = paste0(output_directory, 
+                                                "/fdr_tpr_nbr_missing_ds_nbr_rem", 
+                                                "_incomplete_pch_drosophila_withnds.pdf"),
+                       pointsize = 2, stripsize = 9,
+                       axistitlesize = 15, axistextsize = 10,
+                       legend_nrow = 2) 
+
 plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
                    path_to_results_human = NULL,
                    truth_drosophila = subset(truth_drosophila, 
@@ -787,6 +1253,27 @@ plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                                             "/tpr_nbr_missing_ds_nbr_rem", 
                                             "_incomplete_pch_drosophila.pdf"),
                    pointsize = 1.5, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 7,
+                   legend_nrow = 2) 
+
+plot_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = NULL,
+                   truth_drosophila = subset(truth_drosophila, 
+                                             !(nbr_missing_combined_2 %in% 
+                                                 c("0 ds. 0 rem", "0 ds. 1 rem"))), 
+                   truth_human = NULL, 
+                   methods = methods_missing20, 
+                   method_names = method_names_missing20, 
+                   method_cols = method_cols_missing20, 
+                   method_pch = method_pch2_missing20, 
+                   method_pchnames = method_pchnames_missing20,
+                   method_colnames = method_colnames_missing20,
+                   thresholds = thresholds, 
+                   split_variable = "nbr_missing_5_2",
+                   output_filename = paste0(output_directory, 
+                                            "/tpr_nbr_missing_ds_nbr_rem", 
+                                            "_incomplete_pch_drosophila_withnds.pdf"),
+                   pointsize = 1.5, stripsize = 9,
                    axistitlesize = 15, axistextsize = 7,
                    legend_nrow = 2) 
 
@@ -821,6 +1308,27 @@ plot_fdr_tpr_paper_pch(path_to_results_drosophila = NULL,
                        axistitlesize = 15, axistextsize = 10,
                        legend_nrow = 2) 
 
+plot_fdr_tpr_paper_pch(path_to_results_drosophila = NULL, 
+                       path_to_results_human = path_to_results_human,
+                       truth_drosophila = NULL, 
+                       truth_human = subset(truth_human, 
+                                            !(nbr_missing_combined_2 %in% 
+                                                c("0 ds. 0 rem", "0 ds. 1 rem"))), 
+                       methods = methods_missing20, 
+                       method_names = method_names_missing20, 
+                       method_cols = method_cols_missing20, 
+                       method_pch = method_pch_missing20, 
+                       method_pchnames = method_pchnames_missing20,
+                       method_colnames = method_colnames_missing20,
+                       thresholds = thresholds, 
+                       split_variable = "nbr_missing_5_2",
+                       output_filename = paste0(output_directory, 
+                                                "/fdr_tpr_nbr_missing_ds_nbr_rem", 
+                                                "_incomplete_pch_human_withnds.pdf"),
+                       pointsize = 2, stripsize = 9,
+                       axistitlesize = 15, axistextsize = 10,
+                       legend_nrow = 2) 
+
 plot_tpr_paper_pch(path_to_results_drosophila = NULL, 
                    path_to_results_human = path_to_results_human,
                    truth_drosophila = NULL, 
@@ -839,6 +1347,27 @@ plot_tpr_paper_pch(path_to_results_drosophila = NULL,
                                             "/tpr_nbr_missing_ds_nbr_rem", 
                                             "_incomplete_pch_human.pdf"),
                    pointsize = 1.5, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 7,
+                   legend_nrow = 2) 
+
+plot_tpr_paper_pch(path_to_results_drosophila = NULL, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = NULL, 
+                   truth_human = subset(truth_human, 
+                                        !(nbr_missing_combined_2 %in% 
+                                            c("0 ds. 0 rem", "0 ds. 1 rem"))), 
+                   methods = methods_missing20, 
+                   method_names = method_names_missing20, 
+                   method_cols = method_cols_missing20, 
+                   method_pch = method_pch2_missing20, 
+                   method_pchnames = method_pchnames_missing20,
+                   method_colnames = method_colnames_missing20,
+                   thresholds = thresholds, 
+                   split_variable = "nbr_missing_5_2",
+                   output_filename = paste0(output_directory, 
+                                            "/tpr_nbr_missing_ds_nbr_rem", 
+                                            "_incomplete_pch_human_withnds.pdf"),
+                   pointsize = 1.5, stripsize = 9,
                    axistitlesize = 15, axistextsize = 7,
                    legend_nrow = 2) 
 
@@ -896,6 +1425,18 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    pointsize = 3, stripsize = 9,
                    axistitlesize = 15, axistextsize = 10) 
 
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods = methods_cuffdiff, 
+                   method_names = method_names_cuffdiff, 
+                   method_cols = method_cols_cuffdiff, thresholds = thresholds, 
+                   split_variable = "diff_IsoPct3_2",
+                   output_filename = paste0(output_directory, "/fdr_tpr_diffisopct_withnds_cuffdiff.pdf"),
+                   pointsize = 3, stripsize = 9, legend_nrow = 1, 
+                   axistitlesize = 15, axistextsize = 10) 
+
 plot_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
                path_to_results_human = path_to_results_human,
                truth_drosophila = truth_drosophila, 
@@ -947,6 +1488,18 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    output_filename = paste0(output_directory, 
                                             "/fdr_tpr_diffisopct_filtering.pdf"),
                    pointsize = 3, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 10) 
+
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods = methods_filtering, 
+                   method_names = method_names_filtering, 
+                   method_cols = method_cols_filtering, thresholds = thresholds, 
+                   split_variable = "diff_IsoPct3_2",
+                   output_filename = paste0(output_directory, "/fdr_tpr_diffisopct_filtering_withnds.pdf"),
+                   pointsize = 3, stripsize = 9,
                    axistitlesize = 15, axistextsize = 10) 
 
 plot_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
@@ -1059,6 +1612,21 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    axistitlesize = 15, axistextsize = 10,
                    legend_nrow = 3) 
 
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods_human = methods_25_human,
+                   methods_drosophila = methods_25_drosophila,
+                   method_names = method_names_25, 
+                   method_cols = method_cols_25, 
+                   thresholds = thresholds, 
+                   split_variable = "diff_IsoPct3_2",
+                   output_filename = paste0(output_directory, 
+                                            "/fdr_tpr_diffisopct_filtering_types_25_withnds.pdf"),
+                   pointsize = 3, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 10,
+                   legend_nrow = 3) 
 
 
 ## SPLIT BY (GENE) EXPRESSION LEVEL
@@ -1075,6 +1643,16 @@ truth_drosophila$exprlevel2 <- sapply(truth_drosophila$exprlevel, function(i) {
 truth_human$exprlevel2 <- sapply(truth_human$exprlevel, function(i) {
   paste0(i, " (n = ", length(which(truth_human$exprlevel == i)), ")")
 })
+truth_drosophila$exprlevel2_2 <- sapply(truth_drosophila$exprlevel, function(i) {
+  paste0(i, " (n = ", length(which(truth_drosophila$exprlevel == i)), ", n.ds = ",
+         length(intersect(which(truth_drosophila$exprlevel == i), 
+                          which(truth_drosophila$ds_status == 1))), ")")
+})
+truth_human$exprlevel2_2 <- sapply(truth_human$exprlevel, function(i) {
+  paste0(i, " (n = ", length(which(truth_human$exprlevel == i)), ", n.ds = ",
+         length(intersect(which(truth_human$exprlevel == i), 
+                          which(truth_human$ds_status == 1))), ")")
+})
 ## Original data
 plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
                    path_to_results_human = path_to_results_human,
@@ -1087,6 +1665,17 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    pointsize = 3, stripsize = 10,
                    axistitlesize = 15, axistextsize = 10) 
 
+plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+                   path_to_results_human = path_to_results_human,
+                   truth_drosophila = truth_drosophila, 
+                   truth_human = truth_human, 
+                   methods = methods, method_names = method_names, 
+                   method_cols = method_cols, thresholds = thresholds, 
+                   split_variable = "exprlevel2_2",
+                   output_filename = paste0(output_directory, "/fdr_tpr_TPM_withnds.pdf"),
+                   pointsize = 3, stripsize = 10,
+                   axistitlesize = 15, axistextsize = 10) 
+
 plot_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
                path_to_results_human = path_to_results_human,
                truth_drosophila = truth_drosophila, 
@@ -1095,6 +1684,17 @@ plot_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                method_cols = method_cols, thresholds = thresholds, 
                split_variable = "exprlevel2",
                output_filename = paste0(output_directory, "/tpr_TPM.pdf"),
+               pointsize = 3, stripsize = 10,
+               axistitlesize = 15, axistextsize = 10) 
+
+plot_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
+               path_to_results_human = path_to_results_human,
+               truth_drosophila = truth_drosophila, 
+               truth_human = truth_human, 
+               methods = methods, method_names = method_names, 
+               method_cols = method_cols, thresholds = thresholds, 
+               split_variable = "exprlevel2_2",
+               output_filename = paste0(output_directory, "/tpr_TPM_withnds.pdf"),
                pointsize = 3, stripsize = 10,
                axistitlesize = 15, axistextsize = 10) 
 

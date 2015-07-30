@@ -99,6 +99,21 @@ $CUFFLINKS/cuffcompare -s $REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assem
 -o $REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly_cuffdiff \
 $REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly.gtf
 
+## Prepare gtf file for cuffdiff, where Ensembl gene IDs are used instead of symbols
+R CMD BATCH --no-restore --no-save "--args input_gtf='$REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly.gtf' output_gtf='$REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly_ensembl.gtf'" $RCODEGEN/generate_gtf_cuffdiff.R $ROUT/generate_gtf_cuffdiff_human.Rout
+$CUFFLINKS/cuffcompare -s $REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly.fa \
+-CG -r $REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly_ensembl.gtf \
+-o $REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly_ensembl_cuffdiff \
+$REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly_ensembl.gtf
+
+## Prepare gtf file for cuffdiff, where all exons are renamed to CDS, and all CDS removed,
+## and Ensembl gene IDs are used instead of symbols
+R CMD BATCH --no-restore --no-save "--args input_gtf='$REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly.gtf' output_gtf='$REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly_ensembl_exontocds.gtf'" $RCODEGEN/generate_gtf_exontocds.R $ROUT/generate_gtf_exontocds_human.Rout
+$CUFFLINKS/cuffcompare -s $REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly.fa \
+-CG -r $REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly_ensembl_exontocds.gtf \
+-o $REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly_ensembl_exontocds_cuffdiff \
+$REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly_ensembl_exontocds.gtf
+
 ## Prepare flattened annotations (for DEXSeq)
 python $DEXSEQ/dexseq_prepare_annotation.py \
 $REFERENCEDIR/Homo_sapiens.GRCh37.71.primary_assembly.protein_coding.gtf \
@@ -246,6 +261,24 @@ $NONNULLSIMULATION_NODE/1_reads/tophat/sample1/accepted_hits.bam,$NONNULLSIMULAT
 $NONNULLSIMULATION_NODE/1_reads/tophat/sample4/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample5/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample6/accepted_hits.bam
 
 R CMD BATCH --no-restore --no-save "--args path_to_cuffdiff_result='$NONNULLSIMULATION_NODE/2_counts/cuffdiff/cds.diff' path_to_gtf_file='$REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly.gtf' output_file='$NONNULLSIMULATION_NODE/4_results/cuffdiff.txt' method_name='cuffdiff'" $RCODEGEN/clean_cuffdiff.R $ROUT/clean_cuffdiff_human.Rout
+
+## ---------------------- cuffdiff with Ensembl IDs ------------------------ ##
+## TODO: Run (done, just check)
+$CUFFLINKS/cuffdiff -o $NONNULLSIMULATION_NODE/2_counts/cuffdiff_ensembl -p 6 \
+$REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly_ensembl_cuffdiff.combined.gtf \
+$NONNULLSIMULATION_NODE/1_reads/tophat/sample1/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample2/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample3/accepted_hits.bam \
+$NONNULLSIMULATION_NODE/1_reads/tophat/sample4/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample5/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample6/accepted_hits.bam
+
+R CMD BATCH --no-restore --no-save "--args path_to_cuffdiff_result='$NONNULLSIMULATION_NODE/2_counts/cuffdiff_ensembl/cds.diff' output_file='$NONNULLSIMULATION_NODE/4_results/cuffdiff_ensembl.txt' method_name='cuffdiff_ensembl'" $RCODEGEN/clean_cuffdiff_ensembl.R $ROUT/clean_cuffdiff_ensembl_human.Rout
+
+## ---------------------- cuffdiff with exons as cds ----------------------- ##
+## TODO: Rerun (done, just check)
+$CUFFLINKS/cuffdiff -o $NONNULLSIMULATION_NODE/2_counts/cuffdiff_exontocds -p 6 \
+$REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly_ensembl_exontocds_cuffdiff.combined.gtf \
+$NONNULLSIMULATION_NODE/1_reads/tophat/sample1/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample2/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample3/accepted_hits.bam \
+$NONNULLSIMULATION_NODE/1_reads/tophat/sample4/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample5/accepted_hits.bam,$NONNULLSIMULATION_NODE/1_reads/tophat/sample6/accepted_hits.bam
+
+R CMD BATCH --no-restore --no-save "--args path_to_cuffdiff_result='$NONNULLSIMULATION_NODE/2_counts/cuffdiff_exontocds/cds.diff' output_file='$NONNULLSIMULATION_NODE/4_results/cuffdiff_exontocds.txt' method_name='cuffdiff_exontocds'" $RCODEGEN/clean_cuffdiff_ensembl.R $ROUT/clean_cuffdiff_ensembl_human_exontocds.Rout
 
 ## ------------------------------- rMATS ----------------------------------- ##
 ## Must use samtools 0.1.19
