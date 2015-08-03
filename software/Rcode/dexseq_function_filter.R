@@ -44,6 +44,24 @@ run_dexseq <- function(count_files, conditions, flattened_file = NULL,
     dxd <- dxd[keep, ]
   }
   
+  ## Filter by relative abundance of bins (without accounting for bin size)
+  if (!is.null(filter_perc)) {
+    norm_count <- featureCounts(dxd, normalized = TRUE)
+    norm_count <- as.data.frame(norm_count, stringsAsFactors = FALSE)
+    norm_count$gene <- sapply(strsplit(rownames(norm_count), ":"),
+                              .subset, 1)
+    library(dplyr)
+    count_perc <- as.data.frame(norm_count %>% group_by(gene) %>% 
+                                  mutate_each(funs(perc = . / sum(.))))
+    count_perc[is.na(count_perc)] <- 0
+    rownames(count_perc) <- rownames(norm_count)
+    count_perc$gene <- NULL
+    max_count_perc <- apply(count_perc, 1, max)
+    
+    keep <- names(max_count_perc)[which(max_count_perc >= filter_perc)]
+    dxd <- dxd[rownames(dxd) %in% keep, ]
+  }
+  
   ## Filter by relative abundance of bins after accounting for bin size
   if (!is.null(filter_perc_perkb)) {
     norm_count <- featureCounts(dxd, normalized = TRUE)
@@ -73,24 +91,6 @@ run_dexseq <- function(count_files, conditions, flattened_file = NULL,
     max_count_perc <- apply(count_perc, 1, max)
     
     keep <- names(max_count_perc)[which(max_count_perc >= filter_perc_perkb)]
-    dxd <- dxd[rownames(dxd) %in% keep, ]
-  }
-  
-  ## Filter by relative abundance of bins without accounting for bin size
-  if (!is.null(filter_perc)) {
-    norm_count <- featureCounts(dxd, normalized = TRUE)
-    norm_count <- as.data.frame(norm_count, stringsAsFactors = FALSE)
-    norm_count$gene <- sapply(strsplit(rownames(norm_count), ":"),
-                              .subset, 1)
-    library(dplyr)
-    count_perc <- as.data.frame(norm_count %>% group_by(gene) %>% 
-                                  mutate_each(funs(perc = . / sum(.))))
-    count_perc[is.na(count_perc)] <- 0
-    rownames(count_perc) <- rownames(norm_count)
-    count_perc$gene <- NULL
-    max_count_perc <- apply(count_perc, 1, max)
-    
-    keep <- names(max_count_perc)[which(max_count_perc >= filter_perc)]
     dxd <- dxd[rownames(dxd) %in% keep, ]
   }
   

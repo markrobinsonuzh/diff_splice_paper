@@ -23,7 +23,7 @@ list.dirs <- function(path = ".", pattern = NULL, all.dirs = FALSE,
     return(basename(dirs))
 }
 
-## List subdirectories in count directory and define input bam files
+## List subdirectories in count directory
 dir_names <- list.dirs(path_to_counts, full.names = FALSE)
 dir_names <- setdiff(dir_names, c("INCOMPLETE_MISSING20", 
                                   "INCOMPLETE_ATLEAST5", 

@@ -141,6 +141,9 @@ R CMD BATCH --no-restore --no-save "--args paths_to_gtf_files=list(drosophila='/
 ## ----------- Compare the bins generated with different methods ----------- ##
 R CMD BATCH --no-restore --no-save "--args path_to_gene_model_gtf_file='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.gtf' paths_to_gff_files=c(DEXSeqnoaggreg='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.flattened.nomerge.gff',DEXSeqdefault='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.flattened.gff',featureCountsflat='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.flatman.ign.gff') paths_to_gtf_files=c(featureCountsexon='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.exongene.gtf') all_gene_to_display=c('FBgn0039184+FBgn0039183','FBgn0263755+FBgn0263740','FBgn0010225+FBgn0085334+FBgn0037222','FBgn0004087+FBgn0038437','FBgn0004108+FBgn0036660') output_filename='$FIGDIR/compare_bins_drosophila.pdf' plot_height=10 ext_before=0.05 ext_after=0.05" $RCODEGEN/compare_bins.R $ROUT/compare_bins_drosophila.Rout
 
+## --------------------- Generate illustrations of bins -------------------- ##
+R CMD BATCH --no-restore --no-save "--args path_to_gene_model_gtf_file='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.gtf' paths_to_gff_files=c(bins='$REFERENCEDIR/Drosophila_melanogaster.BDGP5.70.protein_coding.flattened.nomerge.gff') paths_to_gtf_files=NULL all_gene_to_display=c('FBgn0000014','FBgn0000228','FBgn0003178','FBgn0003187','FBgn0004587','FBgn0004893') output_filename='$FIGDIR/bin_illustration.pdf' plot_height=4 ext_before=0.05 ext_after=0.05" $RCODEGEN/compare_bins.R $ROUT/illustrate_bins_drosophila.Rout
+
 ## -------------------------- DATA SIMULATION ------------------------------ ##
 
 ## Estimate the simulation parameters for the individual samples
@@ -421,7 +424,7 @@ R CMD BATCH --no-restore --no-save "--args path_to_gtf='$REFERENCEDIR/Drosophila
 
 ## Prepare annotations and indices as above
 ## Duplicate the protein_coding gtf file into one with the same name as the genome
-## fasta file, to make things easier for index building
+## fasta file, for index building
 scp $REFERENCEDIR/INCOMPLETE_MISSING20/Drosophila_melanogaster.BDGP5.70.protein_coding_missing20.gtf \
 $REFERENCEDIR/INCOMPLETE_MISSING20/Drosophila_melanogaster.BDGP5.70.dna.toplevel.gtf
 

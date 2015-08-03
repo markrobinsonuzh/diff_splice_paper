@@ -31,7 +31,7 @@ list.dirs <- function(path = ".", pattern = NULL, all.dirs = FALSE,
     return(basename(dirs))
 }
 
-## List subdirectories in kallisto directory and define input bam files
+## List subdirectories in kallisto directory
 dir_names <- list.dirs(path_to_kallisto_output, pattern = pattern, full.names = FALSE)
 sample_names <- gsub("sample", "", dir_names)
 abundance_files <- paste0(path_to_kallisto_output, "/", dir_names, "/abundance.txt")

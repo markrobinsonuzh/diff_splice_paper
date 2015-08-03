@@ -75,6 +75,7 @@ colnames(tmp)[colnames(tmp) == "adjP"] <- paste0(method_name, "_target_junction:
 write.table(tmp, file = gsub("\\.txt", "_ontarget_junction.txt", output_file), 
             col.names = TRUE, row.names = FALSE, quote = FALSE, sep = "\t")
 
+## ----------------------------------------------------------------- ##
 ## Only junction reads
 a <- read.table(paste0(mats_dir, "/A3SS.MATS.JunctionCountOnly.txt"), 
                 header = TRUE)[, c("GeneID", "PValue", "FDR")]

@@ -41,10 +41,12 @@ abundance_files <- abundance_files[keep]
 print(abundance_files)
 print(sample_names)
 
+## Read table with kallisto ID to transcript ID conversion
 conv <- read.delim(path_to_conversion_table, header = FALSE, as.is = TRUE, 
                    sep = " ")
 colnames(conv) <- c("kallisto_id", "transcript_id")
 
+## Read information linking genes to transcripts
 genetranscript <- read.delim(path_to_isoform_results, header = TRUE, as.is = TRUE)
 
 if (length(abundance_files) > 0) {

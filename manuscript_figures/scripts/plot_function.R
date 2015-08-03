@@ -21,6 +21,7 @@ calc_FDR <- function(methods, method_names, method_cols, organism,
   rownames(out) <- methods
   out$method_name <- factor(method_names, levels = method_names)
   out$method_col <- method_cols
+##  out$method_col <- factor(method_cols, levels = method_cols[!duplicated(method_cols)])
   if (!is.null(method_pch)) out$method_pch <- method_pch
   out$organism <- organism
   out
@@ -49,6 +50,7 @@ calc_TPR <- function(methods, method_names, method_cols, organism,
   rownames(out) <- methods
   out$method_name <- factor(method_names, levels = method_names)
   out$method_col <- method_cols
+##  out$method_col <- factor(method_cols, levels = method_cols[!duplicated(method_cols)])
   if (!is.null(method_pch)) out$method_pch <- method_pch
   out$organism <- organism
   out

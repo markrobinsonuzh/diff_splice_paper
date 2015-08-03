@@ -70,7 +70,7 @@ $ASTALAVISTA/astalavista -t asta \
 gunzip $REFERENCEDIR/Homo_sapiens.GRCh37.71.primary_assembly.protein_coding_sorted.gtf_astalavista.gtf.gz
 
 ## Duplicate the protein_coding gtf file into one with the same name as the genome
-## fasta file, to make things easier for index building
+## fasta file, for index building (not really necessary)
 scp $REFERENCEDIR/Homo_sapiens.GRCh37.71.primary_assembly.protein_coding.gtf \
 $REFERENCEDIR/Homo_sapiens.GRCh37.71.dna.primary_assembly.gtf
 
@@ -516,7 +516,7 @@ R CMD BATCH --no-restore --no-save "--args path_to_gtf='$REFERENCEDIR/Homo_sapie
 
 ## Prepare annotations and indices as above
 ## Duplicate the protein_coding gtf file into one with the same name as the genome
-## fasta file, to make things easier for index building
+## fasta file, for index building
 scp $REFERENCEDIR/INCOMPLETE_MISSING20/Homo_sapiens.GRCh37.71.primary_assembly.protein_coding_missing20.gtf \
 $REFERENCEDIR/INCOMPLETE_MISSING20/Homo_sapiens.GRCh37.71.dna.primary_assembly.gtf
 

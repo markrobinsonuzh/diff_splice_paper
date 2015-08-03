@@ -14,6 +14,7 @@ print(path_to_cuffdiff_result)
 print(output_file)
 print(method_name)
 
+## Read cuffdiff results and extract gene names and q-values
 res <- read.delim(path_to_cuffdiff_result, header = TRUE, as.is = TRUE)
 
 df <- res[, c("gene", "q_value")]

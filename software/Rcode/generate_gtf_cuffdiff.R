@@ -13,9 +13,12 @@ print(output_gtf)
 library(GenomicRanges)
 library(rtracklayer)
 
+## Import gtf file
 gtf <- import(input_gtf)
+## Change gene symbol to Ensembl ID
 gtf$gene_name <- gtf$gene_id
 
+## Keep exon number as character in output
 gtf$exon_number <- as.character(gtf$exon_number)
 
 export(object = gtf, con = output_gtf, format = "gtf")

@@ -31,7 +31,7 @@ gtf.g.flat <- unlist(gtf.g.flat)
 mcols(gtf.g.flat)$gene_id <- names(gtf.g.flat)
 
 # Flatten overall
-gtf.o.flat <- disjoin(gtf.g.flat,  ignore.strand = ignore_strand)
+gtf.o.flat <- disjoin(gtf.g.flat, ignore.strand = ignore_strand)
 
 # Remove overlapping parts
 co <- countOverlaps(gtf.o.flat, gtf.g.flat)

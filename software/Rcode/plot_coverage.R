@@ -29,6 +29,7 @@ print(show_name)
 print(ext_before)
 print(ext_after)
 
+## Read the file defining which genes to display and which feature to highlight
 displays <- read.delim(path_to_display_file, header = FALSE, 
                        colClasses = "character", as.is = TRUE)
 genes_to_display <- displays[, 1]
@@ -68,7 +69,7 @@ list.dirs <- function(path = ".", pattern = NULL, all.dirs = FALSE,
     return(basename(dirs))
 }
 
-## List subdirectories in tophat directory and define input bw files
+## List subdirectories in tophat directory
 dir_names <- list.dirs(path_to_tophat_output, pattern = pattern, full.names = FALSE)
 sample_names <- gsub("sample", "", dir_names)
 bw_files <- paste0(path_to_tophat_output, "/", dir_names, "/accepted_hits.bw")

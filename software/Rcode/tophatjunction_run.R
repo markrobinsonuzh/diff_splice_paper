@@ -25,7 +25,7 @@ list.dirs <- function(path = ".", pattern = NULL, all.dirs = FALSE,
     return(basename(dirs))
 }
 
-## List subdirectories in tophat directory and define input bam files
+## List subdirectories in tophat directory and define input bed files
 dir.names <- list.dirs(tophat.output.folder, pattern = pattern, full.names = FALSE)
 sample.names <- gsub("sample", "", dir.names)
 junction.files <- paste0(tophat.output.folder, "/", dir.names, "/junctions.bed")

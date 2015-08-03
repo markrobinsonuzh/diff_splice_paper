@@ -45,6 +45,10 @@ method_cols <- c(rgb(240, 228, 66, maxColorValue = 255),
                  rgb(0, 255, 0, maxColorValue = 255),
                  rgb(114, 178, 12, maxColorValue = 255),
                  rgb(123, 0, 119, maxColorValue = 255))
+order_m <- c(5, 1, 2, 4, 3, 9, 6, 7, 8, 10, 11)
+methods <- methods[order_m]
+method_names <- method_names[order_m]
+method_cols <- method_cols[order_m]
 
 ## Define colors and names for cuffdiff comparison
 methods_cuffdiff <- c("cuffdiff_ensembl", "cuffdiff_exontocds")
@@ -263,6 +267,15 @@ method_pchnames_missing20 <- rep(c("complete", "incomplete"), 9)
 method_pch_missing20 <- rep(c(21, 24), 9)
 method_pch2_missing20 <- rep(c(19, 17), 9)
 
+order_m <- c(9, 10, 1, 2, 3, 4, 7, 8, 5, 6, 17, 18, 11, 12, 13, 14, 15, 16)
+methods_missing20 <- methods_missing20[order_m]
+method_names_missing20 <- method_names_missing20[order_m]
+method_colnames_missing20 <- method_colnames_missing20[order_m]
+method_cols_missing20 <- method_cols_missing20[order_m]
+method_pchnames_missing20 <- method_pchnames_missing20[order_m]
+method_pch_missing20 <- method_pch_missing20[order_m]
+method_pch2_missing20 <- method_pch2_missing20[order_m]
+
 ## Determine thresholds and load truth files
 thresholds <- c(0.01, 0.05, 0.1)
 truth_drosophila <- read.delim(path_to_truth_drosophila, header = TRUE, 
@@ -289,7 +302,7 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    method_cols = method_cols, thresholds = thresholds, 
                    split_variable = "all",
                    output_filename = paste0(output_directory, "/fdr_tpr_overall.pdf"),
-                   pointsize = 3, stripsize = 10,
+                   pointsize = 3, stripsize = 15,
                    axistitlesize = 15, axistextsize = 10, fig_height = 5) 
 
 plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila, 
@@ -300,7 +313,7 @@ plot_fdr_tpr_paper(path_to_results_drosophila = path_to_results_drosophila,
                    method_cols = method_cols, thresholds = thresholds, 
                    split_variable = "all_2",
                    output_filename = paste0(output_directory, "/fdr_tpr_overall_withnds.pdf"),
-                   pointsize = 3, stripsize = 10,
+                   pointsize = 3, stripsize = 15,
                    axistitlesize = 15, axistextsize = 10, fig_height = 5) 
 
 ## Original data, cuffdiff
@@ -662,9 +675,9 @@ plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                        split_variable = "all",
                        output_filename = paste0(output_directory, 
                                                 "/fdr_tpr_overall_incomplete_pch.pdf"),
-                       pointsize = 3, stripsize = 10,
+                       pointsize = 3, stripsize = 15,
                        axistitlesize = 15, axistextsize = 10,
-                       legend_nrow = 2, fig_height = 8) 
+                       legend_nrow = 2, fig_height = 7) 
 
 plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila, 
                        path_to_results_human = path_to_results_human,
@@ -680,7 +693,7 @@ plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                        split_variable = "all_2",
                        output_filename = paste0(output_directory, 
                                                 "/fdr_tpr_overall_incomplete_pch_withnds.pdf"),
-                       pointsize = 3, stripsize = 10,
+                       pointsize = 3, stripsize = 15,
                        axistitlesize = 15, axistextsize = 10,
                        legend_nrow = 2, fig_height = 7) 
 
@@ -698,7 +711,7 @@ plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                        split_variable = "all_2",
                        output_filename = paste0(output_directory, 
                                                 "/fdr_tpr_overall_incomplete_pch_withnds_ps1.pdf"),
-                       pointsize = 1, stripsize = 10,
+                       pointsize = 1, stripsize = 15,
                        axistitlesize = 15, axistextsize = 10,
                        legend_nrow = 2, fig_height = 7) 
 
@@ -716,7 +729,7 @@ plot_fdr_tpr_paper_pch(path_to_results_drosophila = path_to_results_drosophila,
                        split_variable = "all_2",
                        output_filename = paste0(output_directory, 
                                                 "/fdr_tpr_overall_incomplete_pch_withnds_ps2.pdf"),
-                       pointsize = 2, stripsize = 10,
+                       pointsize = 2, stripsize = 15,
                        axistitlesize = 15, axistextsize = 10,
                        legend_nrow = 2, fig_height = 7) 
 
