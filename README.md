@@ -2,7 +2,7 @@
 
 This repository contains the code for the following paper comparing various methods for differential isoform usage (differential splicing) detection:
 
-- C Soneson\*, KL Matthes\*, M Nowicka, CW Law & MD Robinson: Differential transcript usage from RNA-seq data: isoform pre-filtering improves performance of count-based methods (submitted)
+- C Soneson\*, KL Matthes\*, M Nowicka, CW Law & MD Robinson: Differential transcript usage from RNA-seq data: isoform pre-filtering improves performance of count-based methods. [Genome Biology 17:12 (2016)](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0862-3).
 
 One goal of the paper is to contrast different types of differential splicing detection methods (assembly-based, event-based, counting bin-based). Moreover, focussing on the counting-bin based methods, we compare several different ways of defining the counting bins, while keeping the inference engine (DEXSeq) fixed. To evaluate the effect of transcriptome complexity, we perform simulation studies based on both human and fruit fly. 
 
